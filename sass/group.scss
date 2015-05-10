@@ -1,0 +1,25 @@
+@charset "utf-8";
+@import "public";
+@import "layout";
+#group-navigation{
+  font-family: $fontStyle;
+  padding: 30px;
+}
+.group-department{
+  height: 42px;
+  font-size: $fontSize18;
+  border-bottom: 1px dashed $primaryColor;
+  line-height: 42px;
+  color: $GgfwColor;
+}
+.group-department-list{
+  padding-top: 10px;
+  font-size: $fontSize16;
+  li{
+    float: left;
+    width: 177px;
+    line-height: 32px;
+    height: 32px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,396 @@
+@charset "utf-8";
+@import "public";
+@import "layout";
+
+//公共服务
+.power-title{
+  border-bottom: solid 1px $primaryColor;
+  line-height: 42px;
+  height: 42px;
+  color: $GgfwColor;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: $fontStyle;
+  span{
+    display: block;
+    width: 200px;
+    height: 41px;
+    padding-left: 5px;
+    border-bottom: solid 2px $GgfwColor;
+  }
+}
+.power-list{
+  padding: 15px 0;
+  li{
+    float: left;
+    width: 80px;
+    height: 70px;
+    overflow: hidden;
+    color: $whiteColor;
+    text-align: center;
+    font-size: 16px;
+    font-family: $fontStyle;
+    margin-right: 12px;
+    @include transition;
+    a{
+      font-size: 14px;
+      color: $whiteColor;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+  }
+  li:hover{
+    @include animation(scale .2s ease forwards);
+  }
+  .nmr{
+    margin: 0px;
+  }
+  .title{
+    line-height: 35px;
+  }
+  .xkcolor{
+    background: #7D9BDB;
+  }
+  .cfcolor{
+    background: #88C9E1;
+  }
+  .zscolor{
+    background: #F589BC;
+  }
+  .spcolor{
+    background: #4ACFE4;
+  }
+  .qzcolor{
+    background: #F36E63;
+  }
+  .zycolor{
+    background: #FFB935;
+  }
+  .jlcolor{
+    background: #59B1F0;
+  }
+  .qrcolor{
+    background: #59B1F0;
+  }
+  .cjcolor{
+    background: #96A979;
+  }
+  .jfcolor{
+    background: #88C9E1;
+  }
+  .qtcolor{
+    background: #FFB935;
+  }
+  .icon{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    font-size: 28px;
+  }
+}
+//行权信息查询部分
+#power{
+  margin-bottom: 10px;
+}
+.power-content{
+  height: 296px;
+  overflow: hidden;
+}
+.power-content-left{
+  background: $powerColor;
+  width: 260px;
+  padding: 10px 10px 5px 10px;
+}
+.power-content-left-box{
+  .title{
+    font-size: $fontSize16;
+    font-family: $fontStyle;
+    color: $GgfwColor;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+  .search-list{
+    font-size: $fontSize;
+    span{
+      width: 65px;
+      display: block;
+      float: left;
+      overflow: hidden;
+    }
+    p{
+      line-height: 30px;
+      height: 30px;
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+  }
+  select{
+    width: 185px;
+    padding: 5px 0;
+    color: $defaultColor;
+    outline: none;
+    box-sizing: border-box;
+  }
+  input[type=text]{
+    @extend select;
+  }
+  input[type=submit]{
+    @extend select;
+    width: 61px;
+    margin-right: 10px;
+    font-size: $fontSize14;
+    background: #EF8E00;
+    @include border-radius;
+    border: 0px;
+    color: $whiteColor;
+    cursor: pointer;
+  }
+}
+.power-content-right{
+  width: 710px;
+  .power-title{
+    line-height: 28px;
+    height: 28px;
+    span{
+      height: 27px;
+      width: 105px;
+    }
+  }
+  .power-content-list{
+    font-size: $fontSize;
+    border: 1px solid $primaryColor;
+    border-top: 0px;
+    .resultCon th{
+      font-weight: bold;
+      height: 28px;
+      border-left: solid 1px #ccc;
+      border-bottom: solid 1px #ccc;
+      line-height: 28px;
+      text-align: center;
+      background: #F8F8F8;
+    }
+    .ranklist{
+      height: 200px;
+      overflow: hidden;
+      td{
+        height: 28px;
+        line-height: 28px;
+        border-left: solid 1px #ccc;
+        border-bottom: solid 1px #ccc;
+        padding: 0px;
+        margin: 0px;
+        text-align: center
+      }
+    }
+    .resultBom {
+      font-size: 12px;
+      height: 35px;
+      line-height: 35px;
+      overflow: hidden;
+      border-top: solid 1px #ccc;
+      text-align: center;
+    }
+  }
+}
+//主题服务
+#service{
+  @extend #power;
+}
+.thematicServices{
+  background: $powerColor;
+}
+.service-nav{
+  padding-left: 5px;
+  @extend .power-list;
+  padding-bottom: 0px;
+  .item-icon{
+    height: 30px;
+    overflow: hidden;
+  }
+  .icon-graduate{
+    font-size: 32px;
+  }
+  li {
+    width: 76px;
+    margin-right: 0px;
+    a{
+      color: $fontColor;
+    }
+  }
+  li.hover a{
+    color: $GgfwColor;
+  }
+
+}
+.item-list{
+  li{
+    line-height: 28px;
+    font-size: $fontSize;
+  }
+}
+.service-list{
+  height: 155px;
+  overflow: hidden;
+  padding: 0 12px;
+  .service-list-left{
+    width: 320px;
+    .title{
+      font-size: $fontSize14;
+      font-weight: bold;
+      line-height: 30px;
+      a{
+        font-size: $fontSize14;
+        color:$GgfwColor;
+      }
+    }
+  }
+  .service-list-center{
+    @extend .service-list-left;
+    width: 350px;
+  }
+  .service-list-right{
+    @extend .service-list-left;
+    width: 300px;
+  }
+}
+.service-list>ul{
+  display: none;
+}
+
+#power{
+  font-family: $fontStyle;
+}
+#service{
+  @extend #power;
+}
+//service bottom
+#service-box{
+  margin-bottom: 10px;
+  .service-box-left{
+    width: 302px;
+    height: 200px;
+    overflow: hidden;
+    .title{
+      border-bottom: solid 1px $primaryColor;
+      font-size: $fontSize14;
+      height: 40px;
+      span{
+        display: block;
+        float: left;
+        width: 78px;
+        text-align: center;
+        line-height: 40px;
+        height: 39px;
+      }
+    }
+    .hover{
+      border-bottom: solid 2px $GgfwColor;
+      font-weight: bold;
+      color: $GgfwColor;
+      a{
+        color: $GgfwColor;
+        font-size: $fontSize;
+      }
+    }
+    .list{
+      padding-top: 10px;
+      font-size: $fontSize;
+      a{
+        display: block;
+        width: 70px;
+        float: left;
+        text-align: center;
+        line-height: 28px;
+        margin-left: 3px;
+        margin-bottom: 5px;
+        height: 28px;
+        border: 1px solid $primaryColor;
+        background: $powerColor;
+      }
+    }
+  }
+  .service-box-center{
+    @extend .service-box-left;
+    margin-left: 20px;
+    width: 315px;
+    .list{
+      a{
+        font-size: $fontSize;
+        background: none;
+        border:0px;
+        width: 100px;
+        text-align: left;
+      }
+    }
+  }
+  .service-box-right{
+    @extend .service-box-left;
+    width: 316px;
+    overflow: inherit;
+    .s-list{
+      padding-top: 10px;
+      font-size: $fontSize;
+      a{
+        color: $whiteColor;
+        font-weight: bold;
+        @include transition;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+    }
+    .icon-person-add{
+      padding-left: 10px;
+      padding-top: 5px;
+    }
+    .tt{
+      line-height: 24px;
+    }
+    .job:hover{
+      @include animation(scale .2s ease forwards);
+    }
+    .job{
+      background: #9E82A3;
+      width: 102px;
+      height: 63px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      .tt{
+        padding-left: 40px;
+      }
+    }
+    .icon{
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+      font-size: 28px;
+    }
+    .insurance{
+      @extend .job;
+      background: #FCCA2C;
+      margin-left: 5px;
+      .tt{
+        padding-left: 20px;
+      }
+    }
+    .travel{
+      @extend .insurance;
+      background: #8FD1F1;
+    }
+    .census{
+      @extend .job;
+      width: 155px;
+      background: #B7CC91;
+    }
+    .car{
+      @extend .census;
+      margin-left: 6px;
+      background: #F98463;
+    }
+  }
+}

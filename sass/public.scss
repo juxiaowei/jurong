@@ -1,0 +1,180 @@
+@charset "utf-8";
+@import "compass/reset";
+@import "compass/layout";
+@import "compass/css3";
+//变量
+@import "variable";
+//动画库
+@import "animation";
+body{
+  font-family: $fontStyle;
+}
+.container{
+  width: 1000px;
+  margin:0 auto;
+}
+//public
+.tright{
+  text-align: right;
+}
+.tleft{
+  text-align: left;
+}
+.borderb{
+  border-bottom: dashed 1px #ccc;
+}
+a{
+  color: $fontColor;
+  text-decoration: none;
+  font-family: $fontStyle;
+}
+a:hover{
+  text-decoration: underline;
+}
+// 底部开始
+@include sticky-footer(100px, "#root", "#root_footer", "#footer");
+#footer{
+  color: $fontColor;
+  font-size: $fontSize;
+  overflow: hidden;
+  border-top:solid 1px $primaryColor;
+  padding-top: 20px;
+  background-image: inline-image("../images/bottom/footer.png");
+  background-repeat:no-repeat;
+  background-position:center bottom;
+  .footer-list{
+    padding: 8px 0;
+    a{
+      padding: 0 5px;
+    }
+  }
+  .footer-info{
+    @extend .footer-list;
+    padding-left: 5px;
+  }
+  p{
+    @extend .footer-info;
+  }
+  .footer-inner{
+    position: relative;
+  }
+  .footer-other{
+    position: absolute;
+    right: 30px;
+    top: 0px;
+  }
+}
+//头部开始
+.lt{
+  float: left;
+}
+.rt{
+  float: right;
+}
+.clear{
+  clear: both;
+}
+#header{
+  .nav-bar-top{
+  border-bottom: solid 1px $primaryColor;
+  height: 40px;
+  font-size: $fontSize;
+  line-height: 40px;
+  overflow: hidden;
+  color: $fontColor;
+  }
+  .nav-link{
+    a{
+      padding: 0 10px;
+    }
+  }
+  .nav-weater{
+    margin-left: 10px;
+  }
+  .nav-search{
+    .nav-search-txt{
+      a{
+        padding: 0 5px;
+      }
+    }
+    .icon{
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+      font-size: 20px;
+    }
+    .icon-search{
+      padding-top: 10px;
+    }
+    .nav-search-input{
+      margin-right: 10px;
+    }
+    .nav-search-input-type{
+      outline: none;
+      border:1px solid $primaryColor;
+      @include border-radius(20px);
+      width: 180px;
+      padding: 5px;
+      transition: all .5s;
+    }
+    .nav-search-btn{
+      margin-right: 10px;
+    }
+    .nav-search-input-type:focus{
+      width: 200px;
+      @include box-shadow(0 0 5px rgba(255,255,255,.6));
+    }
+  }
+  .nav-bar-inner{
+    height: 86px;
+    overflow: hidden;
+    border-bottom: solid 1px $primaryColor;
+    .nav-logo{
+      background-image: inline-image("../images/top/logo.png");
+      width: 316px;
+      height: 74px;
+      margin-top: 8px;
+    }
+  }
+  .nav-collapse{
+    font-family: "微软雅黑","宋体", Arial, Sans;
+    li{
+      float: left;
+      width: 100px;
+      text-align: center;
+      font-size: $fontSize16;
+      color: $fontColor;
+      height: 87px;
+      a{
+        font-size: $fontSize16;
+
+        @include transition(all .3s ease);
+      }
+      a:hover{
+        text-decoration: none;
+      }
+      @include transition(all .3s ease);
+    }
+    li:hover{
+      color: #FF9900;
+      a{
+        color: #FF9900;
+      }
+    }
+    .nav-icon{
+      margin-top: 20px;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+    .nav-text{
+      line-height: 24px;
+    }
+    .icon{
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+    }
+  }
+}

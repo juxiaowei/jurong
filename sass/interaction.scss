@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import "public";
+@import "layout";
+#interaction{
+  margin: 20px 0;
+}
+.interaction-nav{
+  padding-left: 20px;
+  font-size: $fontSize;
+  font-family: $fontStyle;
+  line-height: 34px;
+  height: 34px;
+  background: $powerColor;
+  margin-bottom: 15px;
+  .wish{
+    color: orange;
+    font-size: $fontSize14;
+  }
+  a{
+    padding: 0px 10px;
+  }
+}

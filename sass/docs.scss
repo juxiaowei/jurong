@@ -1,0 +1,239 @@
+@charset "utf-8";
+@import "public";
+@import "layout";
+//魅力句容
+.page-charm{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.charm-focus{
+  height: 400px;
+  margin-bottom: 10px;
+}
+.charm-introduction{
+  font-family: $fontStyle;
+}
+
+.charm-introduction-title{
+  border-bottom: solid 2px $primaryColor;
+  height: 34px;
+  margin-bottom: 10px;
+  font-family: $fontStyle;
+  span{
+    display: block;
+    width: 90px;
+    line-height: 32px;
+    color: $GgfwColor;
+    font-size: $fontSize18;
+    text-align: center;
+    border-bottom: solid 4px $GgfwColor;
+  }
+}
+.charm-introduction-list{
+  .list{
+    width: 240px;
+    background: $powerColor;
+    height: 300px;
+    overflow: hidden;
+    font-family: $fontStyle;
+    border: solid 1px $whiteColor;
+  }
+  .list:hover{
+    border: solid 1px $primaryColor;
+    @include box-shadow(0px 0px 1px $primaryColor);
+  }
+  .img{
+    width: 240px;
+    height: 127px;
+    overflow: hidden;
+  }
+  .title{
+    font-size: $fontSize16;
+    line-height: 52px;
+    height: 52px;
+    text-align: center;
+    a{
+      color: $GgfwColor;
+    }
+  }
+  .content{
+    padding: 0 10px;
+    color: $fontColor;
+    font-size: $fontSize;
+    line-height: 24px;
+  }
+  .mr10{
+    margin-right: 10px;
+  }
+}
+.charm-travel{
+  margin-top: 10px;
+  .charm-travel-list{
+    background: $powerColor;
+    height: 84px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    overflow: hidden;
+    .svg-icon{
+      height: 38px;
+      font-size: 38px;
+      text-align: center;
+      padding-top: 15px;
+      overflow: hidden;
+      padding-bottom: 5px;
+      color: $primaryColor;
+    }
+    .icon{
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+    }
+    .charm-travel-list-item{
+      background: $whiteColor;
+      margin-right: 10px;
+      float: left;
+      width: 153px;
+      border: 1px solid $primaryColor;
+      height: 83px;
+      overflow: hidden;
+    }
+    .charm-travel-list-play{
+      margin-right: 0px;
+    }
+    .charm-travel-list-subtitle{
+      line-height: 24px;
+      height: 24px;
+      text-align: center;
+      font-size: $fontSize14;
+      a{
+        color: $GgfwColor;
+      }
+    }
+    .charm-travel-list-item:hover{
+      @include box-shadow(0px 0px 2px #ccc);
+      border: solid 1px $GgfwColor;
+      .svg-icon{
+      }
+      color: $GgfwColor;
+      @include animation(smscale .2s ease forwards);
+    }
+    .charm-travel-list-eat:hover{
+      border: 1px solid #9F82A1;
+      .svg-icon{
+        color: #9F82A1;
+      }
+      color: #9F82A1;
+    }
+    .charm-travel-list-live:hover{
+      border: 1px solid #8DD2F3;
+      .svg-icon{
+      color: #8DD2F3;
+    }
+      color: #8DD2F3;
+    }
+    .charm-travel-list-go:hover{
+      border: 1px solid #FEC61B;
+      .svg-icon{
+     color: #FEC61B;
+    }
+      color: #FEC61B;
+    }
+    .charm-travel-list-travel:hover{
+      border: 1px solid #F49194;
+      .svg-icon{
+     color: #F49194;
+    }
+      color: #F49194;
+    }
+    .charm-travel-list-shop:hover{
+      border: 1px solid #21BFEF;
+      .svg-icon{
+      color: #21BFEF;
+    }
+      color: #21BFEF;
+    }
+    .charm-travel-list-play:hover{
+      border: 1px solid #B5CA8F;
+      .svg-icon{
+      color: #B5CA8F;
+    }
+      color: #B5CA8F;
+    }
+  }
+}
+.charm-bottom{
+  .charm-bottom-left{
+    width: 494px;
+    overflow: hidden;
+    .charm-bottom-left_list{
+      border-bottom: solid 1px $primaryColor;
+      height: 88px;
+      overflow: hidden;
+    }
+    .charm-bottom-left_list-title{
+      padding: 23px;
+      width: 42px;
+      background: #60A6E2;
+      height: 42px;
+      color: $whiteColor;
+      overflow: hidden;
+      font-size: $fontSize16;
+      p{
+        padding-bottom: 5px;
+        letter-spacing: 5px;
+      }
+    }
+    .charm-bottom-left_list-box{
+      height: 88px;
+      width: 405px;
+      overflow: hidden;
+      border-right: solid 1px $primaryColor;
+      font-size: $fontSize;
+      li{
+        padding-left: 24px;
+        width: 178px;
+        float: left;
+        line-height: 30px;
+        font-family: $fontStyle;
+      }
+    }
+    .purple{
+      background: #C983DC;
+    }
+    .orange{
+      background: orange;
+    }
+    .first-top{
+      border-top: solid 1px $primaryColor;
+    }
+  }
+  .charm-bottom-right{
+    @extend .charm-bottom-left;
+    border: 1px solid $primaryColor;
+    height: 265px;
+    .charm-bottom-right-title{
+      border-bottom: solid 1px $primaryColor;
+      height: 30px;
+      line-height: 30px;
+      padding-left: 10px;
+      font-family: $fontStyle;
+      font-size: $fontSize16;
+    }
+  }
+}
+//魅力句容 focus
+.yx-rotaion{margin:0 auto;}
+.yx-rotaion-btn,.yx-rotaion-title,.yx-rotation-focus,.yx-rotation-t,.yx-rotaion-btn{position:absolute}
+.yx-rotation-title{position:absolute;width:100%;height:40px;line-height:40px;background:#000;filter:alpha(opacity=40);-moz-opacity:0.4;-khtml-opacity:0.4;opacity:0.4;left:0;bottom:0;_bottom:-1px;z-index:1}
+.yx-rotation-t{color:#fff;font-size:16px;font-family:microsoft yahei;z-index:2;bottom:0;left:10px;line-height:40px}
+.yx-rotation-focus span,.yx-rotaion-btn span{background:url("../../images/focus/ico.png") no-repeat;display:block;}
+.yx-rotation-focus{height:40px;line-height:40px;right:20px;bottom:0;z-index:2}
+.yx-rotation-focus span{width:12px;height:12px;line-height:12px;float:left;margin-left:5px;position:relative;top:14px;cursor:pointer;background-position:-24px -126px;text-indent:-9999px}
+.yx-rotaion-btn{width:100%;height:41px;top:50%;margin-top:-20px;}
+.yx-rotaion-btn span{width:41px;height:41px;cursor:pointer;filter:alpha(opacity=30);-moz-opacity:0.3;-khtml-opacity:0.3;opacity:0.3;position:relative}
+.yx-rotaion-btn .left_btn{background-position:-2px -2px;float:left;left:10px}
+.yx-rotaion-btn .right_btn{background-position:-2px -49px;float:right;right:10px}
+.yx-rotaion-btn span.hover{filter:alpha(opacity=80);-moz-opacity:0.8;-khtml-opacity:0.8;opacity:0.8}
+.yx-rotation-focus span.hover{background-position:-10px -126px}
+.rotaion_list{width:0;height:0;overflow:hidden;}
