@@ -328,6 +328,46 @@ body{
 .yx-rotaion-btn span.hover{filter:alpha(opacity=80);-moz-opacity:0.8;-khtml-opacity:0.8;opacity:0.8}
 .yx-rotation-focus span.hover{background-position:-10px -126px}
 .rotaion_list{width:0;height:0;overflow:hidden;}
+//魅力句容导航
+.charm-left{
+  width: 360px;
+}
+.charm-title{
+  border-top: solid 2px $index;
+  border-bottom: solid 1px $primaryColor;
+  height: 42px;
+  line-height: 42px;
+  font-size: $fontSize16;
+  a{
+    width: 115px;
+    display: inline-block;
+    text-align: center;
+  }
+  .hover{
+    color: $index;
+  }
+}
+.charm-list{
+  font-size: $fontSize+1;
+  height: 140px;
+  padding: 10px 0;
+  .charm-content{
+    line-height: 1.7;
+  }
+}
+.charm-travel-content{
+  li{
+    border: 1px solid #ccc;
+    width: 106px;
+    height: 63px;
+    line-height: 63px;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 6px;
+    font-size: 32px;
+  }
+}
 //sidetopic
 #sidetopic{
   margin: 15px 0;
