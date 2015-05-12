@@ -2,7 +2,7 @@
  * Created by Administrator on 2014/11/23 00231.
  */
 require.config({
-    baseUrl: '../jurong/xhtml/www/script/lib/',
+    baseUrl: 'www/script/lib/',
     paths: {
         jquery: 'jquery-1.7.1.min',
         scroll: '../app/scroll',
