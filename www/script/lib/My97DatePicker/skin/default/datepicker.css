@@ -5,8 +5,8 @@
 .WdateDiv{
     width:224px;
     background-color:#FFFFFF;
-    border:#bbb 1px solid;
     padding:2px;
+    height: 336px;
 }
 
 .WdateDiv2{
@@ -22,24 +22,28 @@
 }
 
 .WdateDiv .NavImgll a{
+    margin-top: 8px;
     float:left;
     background:transparent url(img.gif) no-repeat scroll 0 0;
 }
 .WdateDiv .NavImgl a{
+    margin-top: 8px;
     float:left;
     background:transparent url(img.gif) no-repeat scroll -16px 0;
 }
 .WdateDiv .NavImgr a{
+    margin-top: 8px;
     float:right;
     background:transparent url(img.gif) no-repeat scroll -32px 0;
 }
 .WdateDiv .NavImgrr a{
+    margin-top: 8px;
     float:right;
     background:transparent url(img.gif) no-repeat scroll -48px 0;
 }
 
 .WdateDiv #dpTitle{
-    height:19px;
+    height:30px;
     margin-bottom:2px;
     overflow: hidden;
 }
@@ -47,8 +51,10 @@
 .WdateDiv .yminput{
     margin-top:2px;
     text-align:center;
-    height:20px;
+    height:30px;
     border:0px;
+    font-size: 14px;
+    font-family: "microsoft yahei";
     width:75px;
     cursor:pointer;
 }
@@ -128,7 +134,7 @@
 }
 
 .WdateDiv .WdayTable{
-    line-height:20px;
+    line-height:42px;
     border:#c5d9e8 1px solid;
 }
 .WdateDiv .WdayTable .WdayOn{

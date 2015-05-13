@@ -2,12 +2,13 @@
  * Created by Administrator on 2014/11/23 00231.
  */
 require.config({
-    baseUrl: 'www/script/lib/',
+    baseUrl: '../jurong/xhtml/www/script/lib/',
     paths: {
         jquery: 'jquery-1.7.1.min',
         scroll: '../app/scroll',
         yx_rotaion: 'jquery.yx_rotaion',
         slide: 'silde',
+        dataPicker: 'My97DatePicker/WdatePicker',
         yztab: '../app/yztab'
     },
     shim: {
@@ -31,7 +32,7 @@ require.config({
         }
     }
 });
-require(['jquery', 'yztab', 'scroll','yx_rotaion','slide'], function ($, f, t,a) {
+require(['jquery', 'yztab', 'scroll','yx_rotaion','slide','dataPicker'], function ($, f, t,a,b) {
     var f = new f();
     f.tab2('.service-nav', 'li', '.service-nav', 'mouseenter', 'hover', 'ul');
     f.tab2('.xxgk-news-title-one', 'a', '.xxgk-news-title', 'mouseenter', 'hover', 'ul');
@@ -59,6 +60,15 @@ require(['jquery', 'yztab', 'scroll','yx_rotaion','slide'], function ($, f, t,a)
         $(".yx-rotaion").yx_rotaion({auto:true});
     }
 
+    WdatePicker({
+        eCont: 'datePicker',
+        firstDayOfWeek:1,
+        maxDate: '%y-%M-%d',
+        onpicked: function (dp) {
+            window.open("search.jsp?startTime=" + dp.cal.getDateStr()+"&endTime=" + dp.cal.getDateStr());
+        }
+    });
+    // WeekPicker
     $(function() {
         $("#botton-scroll").jCarouselLite({
             btnNext: ".next",
