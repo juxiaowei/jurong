@@ -35,6 +35,9 @@ require.config({
 require(['jquery', 'yztab', 'scroll','yx_rotaion','slide','dataPicker'], function ($, f, t,a,b) {
     var f = new f();
     f.tab2('.service-nav', 'li', '.service-nav', 'mouseenter', 'hover', 'ul');
+    f.tab2('.charm-title', 'a', '.charm-title', 'mouseenter', 'hover', '.charm-content');
+    f.tab2('.group-dep-system', 'a', '.group-dep-system', 'mouseenter', 'hover', 'ul');
+    f.tab2('.information-right-box-title', 'a', '.information-right-box-title', 'mouseenter', 'hover', 'ul');
     f.tab2('.xxgk-news-title-one', 'a', '.xxgk-news-title', 'mouseenter', 'hover', 'ul');
     f.tab2('.xxgk-news-title-two', 'a', '.xxgk-news-title', 'mouseenter', 'hover', 'ul');
     f.tab2('.life-travel-content-left', 'a', '.life-travel-content-left', 'mouseenter', 'hover', '.box');

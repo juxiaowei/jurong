@@ -359,6 +359,7 @@ body{
     line-height: 1.7;
     color: $fontColor;
     text-indent: 26px;
+    display: none;
   }
 }
 .charm-travel-content{
@@ -554,6 +555,9 @@ body{
     padding: 10px 0;
     height: 175px;
     overflow: hidden;
+    ul{
+      display: none;
+    }
   }
 }
 .information-right-col{
@@ -888,6 +892,9 @@ body{
   a{
     color: $fontColor;
     padding: 0 5px;
+  }
+  ul{
+    display: none;
   }
 }
 .group-right{
