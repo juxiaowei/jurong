@@ -2,12 +2,13 @@
  * Created by Administrator on 2014/11/23 00231.
  */
 require.config({
-    baseUrl: 'www/script/lib/',
+    baseUrl: '/jurong/xhtml/www/script/lib/',
     paths: {
         jquery: 'jquery-1.7.1.min',
         scroll: '../app/scroll',
         yx_rotaion: 'jquery.yx_rotaion',
         slide: 'silde',
+        dataPicker: 'My97DatePicker/WdatePicker',
         yztab: '../app/yztab'
     },
     shim: {
@@ -31,9 +32,15 @@ require.config({
         }
     }
 });
-require(['jquery', 'yztab', 'scroll','yx_rotaion','slide'], function ($, f, t,a) {
+require(['jquery', 'yztab', 'scroll','yx_rotaion','slide','dataPicker'], function ($, f, t,a,b) {
     var f = new f();
     f.tab2('.service-nav', 'li', '.service-nav', 'mouseenter', 'hover', 'ul');
+    f.tab2('.letter-search-a', 'a', '.letter-search-a', 'mouseenter', 'hover', 'ul');
+    f.tab2('.public-join-left-title', 'a', '.public-join-left-title', 'mouseenter', 'hover', 'ul');
+    f.tab2('.charm-title', 'a', '.charm-title', 'mouseenter', 'hover', '.charm-content');
+    f.tab2('.news-left-title', 'a', '.news-left-title', 'mouseenter', 'hover', '.news-left-img-list-box');
+    f.tab2('.group-dep-system', 'a', '.group-dep-system', 'mouseenter', 'hover', 'ul');
+    f.tab2('.information-right-box-title', 'a', '.information-right-box-title', 'mouseenter', 'hover', 'ul');
     f.tab2('.xxgk-news-title-one', 'a', '.xxgk-news-title', 'mouseenter', 'hover', 'ul');
     f.tab2('.xxgk-news-title-two', 'a', '.xxgk-news-title', 'mouseenter', 'hover', 'ul');
     f.tab2('.life-travel-content-left', 'a', '.life-travel-content-left', 'mouseenter', 'hover', '.box');
@@ -59,10 +66,46 @@ require(['jquery', 'yztab', 'scroll','yx_rotaion','slide'], function ($, f, t,a)
         $(".yx-rotaion").yx_rotaion({auto:true});
     }
 
+    WdatePicker({
+        eCont: 'datePicker',
+        firstDayOfWeek:1,
+        maxDate: '%y-%M-%d',
+        onpicked: function (dp) {
+            window.open("search.jsp?startTime=" + dp.cal.getDateStr()+"&endTime=" + dp.cal.getDateStr());
+        }
+    });
+    // WeekPicker
     $(function() {
         $("#botton-scroll").jCarouselLite({
             btnNext: ".next",
             btnPrev: ".prev"
         });
+
+        var tgs = new Array( 'div','td','tr');
+        var szs = new Array( 'xx-small','x-small','small','medium','large','x-large','xx-large' );
+        var startSz = 2;
+        function ts( trgt,inc ) {
+            if (!document.getElementById) return
+            var d = document,cEl = null,sz = startSz,i,j,cTags;
+            sz += inc;
+            if ( sz < 0 ) sz = 0;
+            if ( sz > 6 ) sz = 6;
+            startSz = sz;
+            if ( !( cEl = d.getElementById( trgt ) ) ) cEl = d.getElementsByTagName( trgt )[ 0 ];
+            cEl.style.fontSize = szs[ sz ];
+            for ( i = 0 ; i < tgs.length ; i++ ) {
+                cTags = cEl.getElementsByTagName( tgs[ i ] );
+                for ( j = 0 ; j < cTags.length ; j++ ) cTags[ j ].style.fontSize = szs[ sz ];
+            }
+        }
+        $("#big").click(function(){
+            ts('information_zx',1);
+        })
+        $("#small").click(function(){
+            ts('information_zx',-1);
+        })
+    //    分享
+
+
     });
 });

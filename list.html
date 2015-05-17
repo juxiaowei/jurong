@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <title><CMSPRO_CHANNEL FIELD='channelName'>新闻中心</CMSPRO_CHANNEL>
+        - 中国句容门户网站群</title>
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="YangZhou-Ucap" content="true">
+    <!--import css-->
+    <link rel="stylesheet" href="www/css/list.css"/>
+    <link rel="stylesheet" href="www/css/public.css"/>
+    <script type="text/javascript" src="www/script/common.js"></script>
+</head>
+<body>
+<!--#include virtual="/jurong/head/head.shtml"-->
+<!-- content begin-->
+<div id="page">
+    <!-- svg begin -->
+    <svg width="0" height="0" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <symbol id="icon-caret-down" viewBox="0 0 585 1024">
+                <path class="path1" d="M585.143 402.286q0 14.857-10.857 25.714l-256 256q-10.857 10.857-25.714 10.857t-25.714-10.857l-256-256q-10.857-10.857-10.857-25.714t10.857-25.714 25.714-10.857h512q14.857 0 25.714 10.857t10.857 25.714z"></path>
+            </symbol>
+            <symbol id="icon-media-stop" viewBox="0 0 1024 1024">
+                <path class="path1" d="M682.667 256h-341.333c-46.933 0-85.333 38.4-85.333 85.333v341.333c0 46.933 38.4 85.333 85.333 85.333h341.333c46.933 0 85.333-38.4 85.333-85.333v-341.333c0-46.933-38.4-85.333-85.333-85.333z"></path>
+            </symbol>
+            <symbol id="icon-location" viewBox="0 0 1024 1024">
+                <path class="path1" d="M512 1024c0 0-325.818-372.364-325.818-698.182s325.818-325.818 325.818-325.818 325.818 0 325.818 325.818-325.818 698.182-325.818 698.182zM740.352 282.531c-10.705-56.879-42.403-105.751-86.342-139.869-2.979-2.374-5.679-5.027-8.797-7.261-6.889-4.887-14.522-8.751-22.016-12.847-6.284-3.491-12.195-7.308-18.851-10.24-6.516-2.839-13.545-4.515-20.387-6.749-7.959-2.607-15.546-5.725-23.971-7.447-15.5-3.212-31.465-5.027-47.895-5.027 0 0-0.047 0-0.093 0-0.093 0-0.14 0-0.233 0-16.198 0-31.977 1.722-47.244 4.841-30.487 6.144-57.763 18.246-81.687 34.397-0.372 0.233-0.745 0.372-1.071 0.605-9.914 6.749-18.804 14.522-27.462 22.668-2.607 2.42-5.492 4.468-7.959 6.982-5.818 6.004-10.705 12.66-15.872 19.177-4.422 5.632-9.216 10.985-13.172 17.036-2.653 4.236-4.655 8.797-7.121 13.172-4.934 8.797-9.961 17.548-13.777 26.996-1.443 3.537-2.141 7.308-3.398 10.938-3.537 10.24-7.121 20.48-9.216 31.372-2.932 14.615-4.515 29.556-4.515 44.544 0 232.727 232.727 558.545 232.727 558.545s232.727-325.818 232.727-558.545c0-14.476-1.489-28.998-4.375-43.287zM372.364 325.818c0-77.126 62.511-139.636 139.636-139.636s139.636 62.511 139.636 139.636-62.511 139.636-139.636 139.636-139.636-62.511-139.636-139.636z"></path>
+            </symbol>
+        </defs>
+    </svg>
+    <!-- svg end -->
+    <!-- list begin -->
+    <div class="information_list">
+        <!--列表导航 start-->
+        <div class="information_list_ng">
+            <div class="current_tt"><CMSPRO_CHANNEL FIELD='channelName'>栏目标题</CMSPRO_CHANNEL></div>
+            <div class="current_position">
+                <svg class="icon icon-location"><desc><i></i></desc><use xlink:href="#icon-location"></use></svg>
+                当前位置：<CMSPRO_LOCATION LINK=" &gt; " SELFONLY="false" AUTOLINK="true" TARGET="_blank" LINKEXTRA="" HOMEPAGEDESC="首页">当前位置</CMSPRO_LOCATION>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--列表导航  end-->
+    </div>
+        <!--资讯列表 start-->
+        <div class="container">
+            <div class="information_zx_left">
+                <div class="news-left-img-list">
+                    <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" STARTPOS="0" PAGESIZE="10" PAGENAVIGATIONID="page_div" PAGENAVIGATIONCLASS="page_div" INCLUDETYPE="INTERNAL">
+                        <div class="list-image">
+                            <div class="img"><a href="<CMSPRO_DOCUMENT FIELD='url'></CMSPRO_DOCUMENT>" target="_blank"><CMSPRO_APPENDIXS MODE='ALL' STARTPOS='0' NUM='1'><img src ='<CMSPRO_APPENDIX FIELD="path"></CMSPRO_APPENDIX>' /></CMSPRO_APPENDIXS></a></div>
+                            <div class="txt">
+                                <div class="title">
+                                    <CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" NUM="30">标题</CMSPRO_DOCUMENT>
+                                </div>
+                                <div class="con">
+                                    <CMSPRO_DOCUMENT FIELD="content" NUM="120">内容</CMSPRO_DOCUMENT><a href="<CMSPRO_DOCUMENT FIELD='url'></CMSPRO_DOCUMENT>" target="_blank">[详细]</a>
+                                </div>
+                                <div class="date"><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="yyyy年MM月dd日">发布时间</CMSPRO_DOCUMENT></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </CMSPRO_DOCUMENTS>
+                </div>
+                <div id="page_div"></div>
+            </div>
+            <!--资讯列表  end-->
+            <!--右侧排行  start-->
+            <div class="information_zx_right">
+                <div class="title"><CMSPRO_CHANNEL CODE='rdtj' FIELD='channelName'>热点推荐</CMSPRO_CHANNEL></div>
+                <ul class="information_zx_right_ul">
+                    <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="8" STARTPOS="0" PAGESIZE="0" CHANNELCODE="rdtj">
+                        <li>
+                            <span></span><a href="<CMSPRO_DOCUMENT FIELD='url' DOMAINMETADATANAME='热点推荐信息'>来源信息</CMSPRO_DOCUMENT>" target="_blank">[<CMSPRO_DOCUMENT FIELD="channel" DOMAINMETADATANAME="热点推荐信息">来源信息</CMSPRO_DOCUMENT>]</a>
+                            <CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" LINKALTTEXT=" " NUM="12">标题</CMSPRO_DOCUMENT>
+                        </li>
+                    </CMSPRO_DOCUMENTS>
+                </ul>
+                <div class="clear"></div>
+                <div class="title">一周信息排行</div>
+                <ul class="information_zx_right_ul">
+
+                </ul>
+            </div>
+            <!--右侧排行  end-->
+            <div class="clear"></div>
+        </div>
+    <!-- list end -->
+</div>
+<!-- content end-->
+<!-- footer begin-->
+<!--#include virtual="/jurong/bottom/footer.shtml"-->
+<!-- footer end-->
+</body>
+</html>

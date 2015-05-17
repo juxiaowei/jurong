@@ -111,6 +111,7 @@ a:hover{
       margin-right: 10px;
     }
     .nav-search-input-type{
+      margin-top: 5px;
       outline: none;
       border:1px solid $primaryColor;
       @include border-radius(20px);
