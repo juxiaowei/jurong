@@ -14,9 +14,9 @@
     <!--import css-->
     <link rel="stylesheet" href="www/css/index.css?v=20150424"/>
     <!--[if IE 8]>
-        <style></style>
+    <style></style>
     <![endif]-->
-    <script data-main="../jurong/xhtml/www/script/jurong" src="www/script/lib/require.js"></script>
+    <script data-main="/jurong/xhtml/www/script/jurong" src="www/script/lib/require.js"></script>
 </head>
 <body>
 <!-- svg begin-->
@@ -171,8 +171,8 @@
     <a href="http://www.jurong.gov.cn/"><div class="lt" id="logo" title="中国句容网站群"></div></a>
     <div class="rt warp-head-search">
         <div class="search">
-            <form action="aaa.jsp" name="search" method="post" target="_blank">
-                <input type="text" placeholder="请输入搜索关键字"/>
+            <form action="/mySearch/search_new.do" name="search" method="post" target="_blank">
+                <input type="text" name="keyword" placeholder="请输入搜索关键字"/>
                 <input type="submit" name="search-submit" id="search-submit" value=""/>
                 <i class="svg-icon"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg></i>
             </form>
@@ -184,592 +184,912 @@
 </div>
 <!-- logo and search end-->
 <div class="warp-nav">
-    <div class="lt warp-nav-left">
-        <b></b>
-        <ul class="nav-item">
-            <li class="hover"><em class="icon icon-newspaper"></em><svg class="icon icon-newspaper"><use xlink:href="#icon-newspaper"></use></svg><CMSPRO_CHANNEL CODE='xwzx' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
-            <li><svg class="icon icon-images"><use xlink:href="#icon-images"></use></svg><CMSPRO_CHANNEL CODE='mljr' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
-            <li><svg class="icon icon-images"><use xlink:href="#icon-book"></use></svg><CMSPRO_CHANNEL CODE='xxgkml' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
-            <li><svg class="icon icon-images"><use xlink:href="#icon-users"></use></svg><CMSPRO_CHANNEL CODE='ggfw' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
-            <li><svg class="icon icon-images"><use xlink:href="#icon-comment"></use></svg><CMSPRO_CHANNEL CODE='gzcy' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
-            <li><svg class="icon icon-images"><use xlink:href="#icon-earth"></use></svg><CMSPRO_CHANNEL CODE='zqdh' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
-        </ul>
+<div class="lt warp-nav-left">
+    <b></b>
+    <ul class="nav-item">
+        <li class="hover"><em class="icon icon-newspaper"></em><svg class="icon icon-newspaper"><use xlink:href="#icon-newspaper"></use></svg><CMSPRO_CHANNEL CODE='xwzx' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
+        <li><svg class="icon icon-images"><use xlink:href="#icon-images"></use></svg><CMSPRO_CHANNEL CODE='mljr' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
+        <li><svg class="icon icon-images"><use xlink:href="#icon-book"></use></svg><CMSPRO_CHANNEL CODE='xxgkml' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
+        <li><svg class="icon icon-images"><use xlink:href="#icon-users"></use></svg><CMSPRO_CHANNEL CODE='ggfw' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
+        <li><svg class="icon icon-images"><use xlink:href="#icon-comment"></use></svg><CMSPRO_CHANNEL CODE='gzcy' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
+        <li><svg class="icon icon-images"><use xlink:href="#icon-earth"></use></svg><CMSPRO_CHANNEL CODE='zqdh' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
+    </ul>
+</div>
+<div class="rt warp-nav-right clear">
+<b></b>
+<div class="nav-right-box clear">
+<!-- 新闻资讯 begin-->
+<div class="nav-box lt clear">
+    <!--焦点图 begin-->
+    <div class="lt news-focus">
+        <div class="yx-rotaion">
+            <ul class="rotaion_list">
+                <CMSPRO_DOCUMENTS CHANNELCODE="tpxw" DOCUMENTTYPE="0|1|2|3" NUM="5" STARTPOS="0">
+                    <li>
+                        <a title="<CMSPRO_DOCUMENT field='title'></CMSPRO_DOCUMENT>"  href="<CMSPRO_DOCUMENT field='url'></CMSPRO_DOCUMENT>">
+                            <img alt="<CMSPRO_DOCUMENT field='title' NUM='20'></CMSPRO_DOCUMENT>"  width="440" height="340" src="<CMSPRO_APPENDIXS MODE='ALL' STARTPOS='0' NUM='1'><CMSPRO_APPENDIX FIELD='path'></CMSPRO_APPENDIX></CMSPRO_APPENDIXS> "/>
+                        </a>
+                    </li>
+                </CMSPRO_DOCUMENTS>
+            </ul>
+        </div>
     </div>
-    <div class="rt warp-nav-right clear">
-        <b></b>
-        <div class="nav-right-box clear">
-            <!-- 新闻资讯 begin-->
-            <div class="nav-box lt clear">
-                <!--焦点图 begin-->
-                <div class="lt news-focus">
-                    <div class="yx-rotaion">
-                        <ul class="rotaion_list">
-                            <CMSPRO_DOCUMENTS CHANNELCODE="tpxw" DOCUMENTTYPE="0|1|2|3" NUM="5" STARTPOS="0">
-                                <li>
-                                    <a title="<CMSPRO_DOCUMENT field='title' NUM="20"></CMSPRO_DOCUMENT>"  href="<CMSPRO_DOCUMENT field='url'></CMSPRO_DOCUMENT>">
-                                        <img width="440" height="340" src="<CMSPRO_APPENDIXS MODE='ALL' STARTPOS='0' NUM='1'><CMSPRO_APPENDIX FIELD='path'></CMSPRO_APPENDIX></CMSPRO_APPENDIXS> "/>
-                                    </a>
-                                </li>
-                            </CMSPRO_DOCUMENTS>
-                        </ul>
-                    </div>
-                </div>
-                <!--焦点图 end-->
-                <!-- 新闻列表 begin -->
-                <div class="rt news-list">
-                    <div class="new-title">
-                        <ul>
-                            <li class="hover"><svg class="icon icon-new"><use xlink:href="#icon-new"></use></svg><CMSPRO_CHANNEL CODE='jrjr' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
-                            <li><CMSPRO_CHANNEL CODE='xzdt' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
-                            <li><CMSPRO_CHANNEL CODE='bmdt' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
-                            <li><CMSPRO_CHANNEL CODE='tzgg' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
-                        </ul>
-                    </div>
-                    <div class="new-content-box">
-                        <div class="new-content" style="display: block">
-                            <div class="new-inline">
-                                <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0" PAGESIZE="0" CHANNELCODE="jrjr">
-                                    <p class="title"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="22">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT></p>
-                                    <p class="content"><CMSPRO_DOCUMENT FIELD="content" NUM="86">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</CMSPRO_DOCUMENT></p>
-                                </CMSPRO_DOCUMENTS>
-                            </div>
-                            <div class="new-box">
-                                <ul>
-                                    <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="1" PAGESIZE="0" CHANNELCODE="jrjr">
-                                        <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="24">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM-dd">
-                                            发布时间</CMSPRO_DOCUMENT></span></li>
-                                    </CMSPRO_DOCUMENTS>
-                                </ul>
-                            </div>
-                        </div><div class="new-content">
-                        <div class="new-inline">
-                            <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0" PAGESIZE="0" CHANNELCODE="xzdt">
-                                <p class="title"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="22">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT></p>
-                                <p class="content"><CMSPRO_DOCUMENT FIELD="content" NUM="86">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</CMSPRO_DOCUMENT></p>
-                            </CMSPRO_DOCUMENTS>
-                        </div>
-                        <div class="new-box">
-                            <ul>
-                                <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="1" PAGESIZE="0" CHANNELCODE="xzdt">
-                                    <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="24">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM-dd">
-                                        发布时间</CMSPRO_DOCUMENT></span></li>
-                                </CMSPRO_DOCUMENTS>
-                            </ul>
-                        </div>
-                    </div><div class="new-content">
-                        <div class="new-inline">
-                            <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0" PAGESIZE="0" CHANNELCODE="bmdt">
-                                <p class="title"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="22">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT></p>
-                                <p class="content"><CMSPRO_DOCUMENT FIELD="content" NUM="86">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</CMSPRO_DOCUMENT></p>
-                            </CMSPRO_DOCUMENTS>
-                        </div>
-                        <div class="new-box">
-                            <ul>
-                                <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="1" PAGESIZE="0" CHANNELCODE="bmdt">
-                                    <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="24">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM-dd">
-                                        发布时间</CMSPRO_DOCUMENT></span></li>
-                                </CMSPRO_DOCUMENTS>
-                            </ul>
-                        </div>
-                    </div><div class="new-content">
-                        <div class="new-inline">
-                            <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0" PAGESIZE="0" CHANNELCODE="tzgg">
-                                <p class="title"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="22">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT></p>
-                                <p class="content"><CMSPRO_DOCUMENT FIELD="content" NUM="86">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</CMSPRO_DOCUMENT></p>
-                            </CMSPRO_DOCUMENTS>
-                        </div>
-                        <div class="new-box">
-                            <ul>
-                                <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="1" PAGESIZE="0" CHANNELCODE="tzgg">
-                                    <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="24">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM-dd">
-                                        发布时间</CMSPRO_DOCUMENT></span></li>
-                                </CMSPRO_DOCUMENTS>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <!-- 新闻列表 end -->
-            </div>
-            <!-- 新闻资讯 end-->
-            <!-- 魅力句容 begin-->
-            <div class="nav-box lt clear">
-                <div class="charm-left lt">
-                    <div class="charm-title">
-                        <a href="<CMSPRO_CHANNEL CODE='csgk' FIELD='url'></CMSPRO_CHANNEL>" class="hover"><CMSPRO_CHANNEL CODE='csgk' FIELD='channelName'>栏目标题</CMSPRO_CHANNEL></a>
-                        <a href="<CMSPRO_CHANNEL CODE='jjfz' FIELD='url'></CMSPRO_CHANNEL>"><CMSPRO_CHANNEL CODE='jjfz' FIELD='channelName'>栏目标题</CMSPRO_CHANNEL></a>
-                        <a href="<CMSPRO_CHANNEL CODE='shsy' FIELD='url'></CMSPRO_CHANNEL>"><CMSPRO_CHANNEL CODE='shsy' FIELD='channelName'>栏目标题</CMSPRO_CHANNEL></a>
-                    </div>
-                    <div class="charm-list">
-                        <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0" PAGESIZE="0" CHANNELCODE="csgk">
-                        <div class="charm-content" style="display: block;">
-                            <CMSPRO_DOCUMENT FIELD="content" NUM="160">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</CMSPRO_DOCUMENT>
-                        </div>
-                        </CMSPRO_DOCUMENTS>
-                        <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0" PAGESIZE="0" CHANNELCODE="jjfz">
-                            <div class="charm-content">
-                                <CMSPRO_DOCUMENT FIELD="content" NUM="160">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</CMSPRO_DOCUMENT>
-                            </div>
-                        </CMSPRO_DOCUMENTS>
-                        <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0" PAGESIZE="0" CHANNELCODE="shsy">
-                            <div class="charm-content">
-                                <CMSPRO_DOCUMENT FIELD="content" NUM="160">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</CMSPRO_DOCUMENT>
-                            </div>
-                        </CMSPRO_DOCUMENTS>
-                    </div>
-                    <div class="charm-travel-content">
-                        <ul>
-                        <a href="<CMSPRO_CHANNEL CODE='eat' FIELD='url'></CMSPRO_CHANNEL>" title="吃" >
-                            <li class="eat">
-                                <svg class="icon icon-food">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-food"></use>
-                                </svg>
-                            </li>
-                        </a> <a href="<CMSPRO_CHANNEL CODE='live' FIELD='url'></CMSPRO_CHANNEL>" title="住">
-                            <li class="ml8 live hover">
-                                <svg class="icon icon-home2">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-home2"></use>
-                                </svg>
-                            </li>
-                        </a> <a href="<CMSPRO_CHANNEL CODE='going' FIELD='url'></CMSPRO_CHANNEL>" title="行">
-                            <li class="go ml8">
-                                <svg class="icon icon-automobile">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-automobile"></use>
-                                </svg>
-                            </li>
-                        </a> <a href="<CMSPRO_CHANNEL CODE='tour' FIELD='url'></CMSPRO_CHANNEL>" title="游">
-                            <li class="ml10 tour">
-                                <svg class="icon icon-flight">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-flight"></use>
-                                </svg>
-                            </li>
-                        </a> <a href="<CMSPRO_CHANNEL CODE='shop' FIELD='url'></CMSPRO_CHANNEL>" title="购" class="hover">
-                            <li class="shop ml8">
-                                <svg class="icon icon-shopping-cart">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                         xlink:href="#icon-shopping-cart"></use>
-                                </svg>
-                            </li>
-                        </a> <a href="<CMSPRO_CHANNEL CODE='play' FIELD='url'></CMSPRO_CHANNEL>" title="娱">
-                            <li class="ml8 play">
-                                <svg class="icon icon-microphone">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-microphone"></use>
-                                </svg>
-                            </li>
-                        </a></ul>
-                    </div>
-                </div>
-                <div class="charm-right rt clear">
-                    <CMSPRO_DOCUMENTS CHANNELCODE="tour" DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0">
-                    <div class="charm-right-box charm-right-box-one lt">
-                        <a href="<CMSPRO_DOCUMENT field='url'></CMSPRO_DOCUMENT>" target="_blank">
-                            <div class="charm-right-img">
-                                <img src="<CMSPRO_APPENDIXS MODE='ALL' STARTPOS='0' NUM='1'><CMSPRO_APPENDIX FIELD='path'></CMSPRO_APPENDIX></CMSPRO_APPENDIXS> "/>
-                            </div>
-                            <div class="charm-right-bottom"></div>
-                            <div class="charm-right-text"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="false" NUM="10">标题</CMSPRO_DOCUMENT></div>
-                        </a>
-                    </div>
+    <!--焦点图 end-->
+    <!-- 新闻列表 begin -->
+    <div class="rt news-list">
+        <div class="new-title">
+            <ul>
+                <li class="hover"><svg class="icon icon-new"><use xlink:href="#icon-new"></use></svg><CMSPRO_CHANNEL CODE='jrjr' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
+                <li><CMSPRO_CHANNEL CODE='xzdt' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
+                <li><CMSPRO_CHANNEL CODE='bmdt' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
+                <li><CMSPRO_CHANNEL CODE='tzgg' FIELD='channelName' AUTOLINK="true" NUM="10" TARGET="_blank">栏目标题</CMSPRO_CHANNEL></li>
+            </ul>
+        </div>
+        <div class="new-content-box">
+            <div class="new-content" style="display: block">
+                <div class="new-inline">
+                    <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0" PAGESIZE="0" CHANNELCODE="jrjr">
+                        <p class="title"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="22">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT></p>
+                        <p class="content"><CMSPRO_DOCUMENT FIELD="content" NUM="86">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</CMSPRO_DOCUMENT></p>
                     </CMSPRO_DOCUMENTS>
-                    <CMSPRO_DOCUMENTS CHANNELCODE="tour" DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0">
-                    <div class="charm-right-box charm-right-box-two lt ml15">
-                        <a  href="<CMSPRO_DOCUMENT field='url'></CMSPRO_DOCUMENT>" target="_blank">
-                            <div class="charm-right-img">
-                                <img src="<CMSPRO_APPENDIXS MODE='ALL' STARTPOS='0' NUM='1'><CMSPRO_APPENDIX FIELD='path'></CMSPRO_APPENDIX></CMSPRO_APPENDIXS> "/>
-                            </div>
-                            <div class="charm-right-bottom"></div>
-                            <div class="charm-right-text"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="false" NUM="10">标题</CMSPRO_DOCUMENT></div>
-                        </a>
-                    </div>
-                    </CMSPRO_DOCUMENTS>
-                    <CMSPRO_DOCUMENTS CHANNELCODE="tour" DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0">
-                    <div class="charm-right-box charm-right-box-three lt">
-                        <a href="<CMSPRO_DOCUMENT field='url'></CMSPRO_DOCUMENT>" target="_blank">
-                        <div class="charm-right-img">
-                            <img src="<CMSPRO_APPENDIXS MODE='ALL' STARTPOS='0' NUM='1'><CMSPRO_APPENDIX FIELD='path'></CMSPRO_APPENDIX></CMSPRO_APPENDIXS> "/>
-                        </div>
-                        <div class="charm-right-bottom"></div>
-                        <div class="charm-right-text"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="false" NUM="10">标题</CMSPRO_DOCUMENT></div>
-                        </a>
-                    </div>
-                        </CMSPRO_DOCUMENTS>
-                    <CMSPRO_DOCUMENTS CHANNELCODE="tour" DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0">
-                    <div class="charm-right-box  charm-right-box-four lt ml15">
-                        <a href="<CMSPRO_DOCUMENT field='url'></CMSPRO_DOCUMENT>" target="_blank">
-                        <div class="charm-right-img">
-                            <img src="<CMSPRO_APPENDIXS MODE='ALL' STARTPOS='0' NUM='1'><CMSPRO_APPENDIX FIELD='path'></CMSPRO_APPENDIX></CMSPRO_APPENDIXS> "/>
-                        </div>
-                        <div class="charm-right-bottom"></div>
-                        <div class="charm-right-text"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="false" NUM="10">标题</CMSPRO_DOCUMENT></div>
-                        </a>
-                    </div>
-                     </CMSPRO_DOCUMENTS>
                 </div>
-            </div>
-            <!-- 魅力句容 end-->
-            <!-- 信息公开 begin-->
-            <div class="nav-box lt clear">
-                <div class="information-left lt">
-                    <div class="information-title">市政府主要领导</div>
-                    <div class="information-mayor clear">
-                        <div class="img lt">
-                            <img src="images/www/mayor.jpg" alt=""/>
-                        </div>
-                        <div class="list rt">
-                            <p class="mayor"><a href="<CMSPRO_CHANNEL CODE='mayor' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">市长　<CMSPRO_CHANNEL CODE='mayor' FIELD='channelName'>栏目标题</CMSPRO_CHANNEL></a></p>
-                            <p><a href="<CMSPRO_CHANNEL CODE='xwfz' FIELD='url'></CMSPRO_CHANNEL>">[&nbsp;工作分工&nbsp;]</a></p>
-                            <p><a href="<CMSPRO_CHANNEL CODE='xwjl' FIELD='url'></CMSPRO_CHANNEL>">[&nbsp;个人简历&nbsp;]</a></p>
-                            <p><a href="<CMSPRO_CHANNEL CODE='xwhd' FIELD='url'></CMSPRO_CHANNEL>">[&nbsp;重要活动&nbsp;]</a></p>
-                        </div>
-                    </div>
-                    <div class="information-mayor-list">
-                        <a href="<CMSPRO_CHANNEL CODE='panqun' FIELD='url'></CMSPRO_CHANNEL>">潘　群 [副市长] </a>
-                        <a href="<CMSPRO_CHANNEL CODE='wangqin' FIELD='url'></CMSPRO_CHANNEL>">王　琴 [副市长] </a>
-                        <a href="<CMSPRO_CHANNEL CODE='plh' FIELD='url'></CMSPRO_CHANNEL>">彭良豪 [副市长] </a>
-                        <a href="<CMSPRO_CHANNEL CODE='wanghua' FIELD='url'></CMSPRO_CHANNEL>">王　华 [副市长] </a>
-                        <a href="<CMSPRO_CHANNEL CODE='yaohua' FIELD='url'></CMSPRO_CHANNEL>">姚　华 [副市长] </a>
-                        <a href="<CMSPRO_CHANNEL CODE='swj' FIELD='url'></CMSPRO_CHANNEL>">孙卫军 [副市长] </a>
-                        <a href="<CMSPRO_CHANNEL CODE='yangyuan' FIELD='url'></CMSPRO_CHANNEL>">仰　远 [副市长] </a>
-                    </div>
-                </div>
-                <div class="information-right rt">
-                    <div class="information-right-box">
-                        <div class="information-right-box-title">
-                            <a href="<CMSPRO_CHANNEL CODE='xxgk' FIELD='url'></CMSPRO_CHANNEL>" class="hover" target="_blank">最新信息</a><a href="<CMSPRO_CHANNEL CODE='szfrs' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">人事信息</a><a href="<CMSPRO_CHANNEL CODE='jjhsh' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">统计信息</a><a href="<CMSPRO_CHANNEL CODE='czyjs' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">财政信息</a>
-                        </div>
-                        <div class="information-right-box-list">
-                            <ul style="display: block;">
-                                <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="0" PAGESIZE="0" CHANNELCODE="xxgk">
-                                <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="38">
-                                    标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM/dd">发布时间</CMSPRO_DOCUMENT></span></li>
-                                    </CMSPRO_DOCUMENTS>
-                            </ul><ul>
-                                <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="0" PAGESIZE="0" CHANNELCODE="szfrs">
-                                <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="38">
-                                    标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM/dd">发布时间</CMSPRO_DOCUMENT></span></li>
-                                    </CMSPRO_DOCUMENTS>
-                            </ul><ul>
-                                <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="0" PAGESIZE="0" CHANNELCODE="jjhsh">
-                                <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="38">
-                                    标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM/dd">发布时间</CMSPRO_DOCUMENT></span></li>
-                                    </CMSPRO_DOCUMENTS>
-                            </ul><ul>
-                                <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="0" PAGESIZE="0" CHANNELCODE="czyjs">
-                                <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="38">
-                                    标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM/dd">发布时间</CMSPRO_DOCUMENT></span></li>
-                                    </CMSPRO_DOCUMENTS>
-                            </ul>
-                        </div>
-                        <div class="information-right-col">
-                            <div class="information-right-col-title">政府信息公开</div>
-                            <div class="information-right-col-list clear">
-                                <ul>
-                                    <li><svg class="icon icon-file"><use xlink:href="#icon-file"></use></svg><a href="<CMSPRO_CHANNEL CODE='xxgkzn' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">市政府信息公开指南</a></li>
-                                    <li><svg class="icon icon-file"><use xlink:href="#icon-file"></use></svg><a href="<CMSPRO_CHANNEL CODE='xxgkml' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">市政府信息公开目录</a></li>
-                                    <li><svg class="icon icon-file"><use xlink:href="#icon-file"></use></svg><a href="<CMSPRO_CHANNEL CODE='xxgkzd' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">市政府信息公开制度</a></li>
-                                    <li><svg class="icon icon-file"><use xlink:href="#icon-file"></use></svg><a href="<CMSPRO_CHANNEL CODE='xxgknb' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">市政府信息公开年报</a></li>
-                                    <li><svg class="icon icon-file"><use xlink:href="#icon-file"></use></svg><a href="<CMSPRO_CHANNEL CODE='ysqgk' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">依　申　请　公　开</a></li>
-                                    <li><svg class="icon icon-file"><use xlink:href="#icon-file"></use></svg><a href="<CMSPRO_CHANNEL CODE='gzyjx' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">政府信息公开工作意见箱</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 信息公开 end-->
-            <!-- 公共服务 begin-->
-            <div class="nav-box lt clear">
-                    <div class="public-join-left lt">
-                        <div class="public-join-left-title">
-                            <a href="" class="hover">市民办事</a><a href="">企业办事</a><a href="">服务部门</a>
-                        </div>
-                        <div class="public-join-left-list clear">
-                            <ul>
-                                <li><i></i><a href="">婚姻生育 </a></li>
-                                <li><i></i><a href="">婚姻生育 </a></li>
-                                <li><i></i><a href="">婚姻生育 </a></li>
-                                <li><i></i><a href="">婚姻生育 </a></li>
-                                <li><i></i><a href="">婚姻生育 </a></li>
-                                <li><i></i><a href="">婚姻生育 </a></li>
-                                <li><i></i><a href="">婚姻生育 </a></li>
-                                <li><i></i><a href="">婚姻生育 </a></li>
-                                <li><i></i><a href="">婚姻生育 </a></li>
-                            </ul>
-                        </div>
-                        <div class="service-list">
-                            <ul>
-                                <li>
-                                    <a href="<CMSPRO_CHANNEL CODE='jyfw' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
-                                    <div class="icon-svg"><svg class="icon icon-images"><use xlink:href="#icon-school"></use></svg></div>
-                                    <div class="text">教育服务</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="<CMSPRO_CHANNEL CODE='sbfw' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
-                                    <div class="icon-svg"><svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg></div>
-                                    <div class="text">社保服务</div>
-                                        </a>
-                                </li>
-                                <li><a href="<CMSPRO_CHANNEL CODE='ylfw' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
-                                    <div class="icon-svg"><svg class="icon icon-aid-kit"><use xlink:href="#icon-aid-kit"></use></svg></div>
-                                    <div class="text">医疗服务</div></a>
-                                </li>
-                                <li><a href="<CMSPRO_CHANNEL CODE='zffw' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
-                                    <div class="icon-svg"><svg class="icon icon-office"><use xlink:href="#icon-home3"></use></svg></div>
-                                    <div class="text">住房服务</div></a>
-                                </li>
-                                <li><a href="<CMSPRO_CHANNEL CODE='hysy' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
-                                    <div class="icon-svg"><svg class="icon icon-users"><use xlink:href="#icon-users"></use></svg></div>
-                                    <div class="text">婚姻收养</div></a>
-                                </li>
-                                <li><a href="<CMSPRO_CHANNEL CODE='gysy' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
-                                    <div class="icon-svg"><svg class="icon icon-chart"><use xlink:href="#icon-chart"></use></svg></div>
-                                    <div class="text">公共事业</div></a>
-                                </li>
-                                <li><a href="<CMSPRO_CHANNEL CODE='zjbl' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
-                                    <div class="icon-svg"><svg class="icon icon-vcard"><use xlink:href="#icon-vcard"></use></svg></div>
-                                    <div class="text">证件办理</div></a>
-                                </li>
-                                <li><a href="<CMSPRO_CHANNEL CODE='xxgkzn' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
-                                    <div class="icon-svg"><svg class="icon icon-images"><use xlink:href="#icon-briefcase"></use></svg></div>
-                                    <div class="text">招商引资</div></a>
-                                </li>
-                                <li><a href="<CMSPRO_CHANNEL CODE='jyfwu' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
-                                    <div class="icon-svg"><svg class="icon icon-images"><use xlink:href="#icon-user-tie"></use></svg></div>
-                                    <div class="text">就业服务</div></a>
-                                </li>
-                                <li><a href="<CMSPRO_CHANNEL CODE='jyns' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
-                                    <div class="icon-svg"><svg class="icon icon-images"><use xlink:href="#icon-coin-dollar"></use></svg></div>
-                                    <div class="text">经营纳税</div></a>
-                                </li>
-                                <li><a href="<CMSPRO_CHANNEL CODE='jtfw' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
-                                    <div class="icon-svg"><svg class="icon icon-images"><use xlink:href="#icon-bus"></use></svg></div>
-                                    <div class="text">交通服务</div></a>
-                                </li>
-                                <li><a href="<CMSPRO_CHANNEL CODE='snfw' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
-                                    <div class="icon-svg"><svg class="icon icon-tree"><use xlink:href="#icon-tree"></use></svg></div>
-                                    <div class="text">三农服务</div></a>
-                                </li>
-                                <li><a href="<CMSPRO_CHANNEL CODE='qykb' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
-                                    <div class="icon-svg"><svg class="icon icon-images"><use xlink:href="#icon-office"></use></svg></div>
-                                    <div class="text">企业开办</div></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="public-join-right rt">
-                        <div class="public-join-right-box">
-                            <div class="public-join-right-box-title">行政权力公开</div>
-                            <div class="public-join-right-box-list">
-                                <ul>
-                                    <li><i></i><a href="">婚姻生育 </a></li>
-                                    <li><i></i><a href="">婚姻生育 </a></li>
-                                    <li><i></i><a href="">婚姻生育 </a></li>
-                                    <li><i></i><a href="">婚姻生育 </a></li>
-                                    <li><i></i><a href="">婚姻生育 </a></li>
-                                    <li><i></i><a href="">婚姻生育 </a></li>
-                                    <li><i></i><a href="">婚姻生育 </a></li>
-                                    <li><i></i><a href="">婚姻生育 </a></li>
-                                    <li><i></i><a href="">婚姻生育 </a></li>
-                                    <li><i></i><a href="">婚姻生育 </a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="public-join-right-box">
-                            <div class="public-join-right-box-title">便民提示</div>
-                            <div class="public-join-bmlist">
-                                <ul>
-                                    <li><i></i><a href="">婚姻生育 </a></li>
-                                    <li><i></i><a href="">婚姻生育 </a></li>
-                                    <li><i></i><a href="">婚姻生育 </a></li>
-                                    <li><i></i><a href="">婚姻生育 </a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <!-- 公共服务 end-->
-            <!-- 公共参与 begin-->
-            <div class="nav-box lt clear">
-                <div class="public-service-left lt">
-                    <div class="title">在线访谈<span><a href="">进入访谈>></a></span></div>
-                    <div class="img">
-                        <img width="245" height="180" src="images/www/zxft.jpg" alt=""/>
-                    </div>
-                    <div class="content">
-                        <table>
-                            <tbody>
-                            <tr>
-                                <td><span>主题:</span></td>
-                                <td>改进作风增质效 服务名声促发展</td>
-                            </tr>
-                            <tr>
-                                <td><span>时间:</span></td>
-                                <td>2014-09-20下午15：00-16：00 </td>
-                            </tr>
-                            <tr>
-                                <td valign="top" style="vertical-align:top"><span>嘉宾:</span></td>
-                                <td><p>副市长、市公安局局长刘亚军</p><p>市民代表</p></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="public-service-center lt">
-                    <div class="public-service-center-title">
-                        <a href="" class="hover">寄语市长</a><a href="">最新回复</a><a href="">我要写信</a>
-                    </div>
-                    <div class="public-service-center-list">
-                        <ul>
-                            <li>
-                                <div class="title"><a href="">菱塘职中这样选拔干部</a><span>2015-05-12</span></div>
-                                <div class="content">夏局长你好： 菱塘职中4月份未经竞选和公示，直接任命王某为中层主任，符合干部管理制度吗？</div>
-                            </li><li>
-                            <div class="title"><a href="">菱塘职中这样选拔干部</a><span>2015-05-12</span></div>
-                            <div class="content">夏局长你好： 菱塘职中4月份未经竞选和公示，直接任命王某为中层主任，符合干部管理制度吗？</div>
-                        </li><li>
-                            <div class="title"><a href="">菱塘职中这样选拔干部</a><span>2015-05-12</span></div>
-                            <div class="content">夏局长你好： 菱塘职中4月份未经竞选和公示，直接任命王某为中层主任，符合干部管理制度吗？</div>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="public-service-right rt">
+                <div class="new-box">
                     <ul>
-                        <li class="icon-mail"><a href="">
-                            <div class="icon-svg "><svg class="icon"><use xlink:href="#icon-mail"></use></svg></div>
-                            <div class="text">书记信箱</div></a>
-                        </li>
-                        <li class="icon-phone"><a href="">
-                            <div class="icon-svg "><svg class="icon"><use xlink:href="#icon-phone"></use></svg></div>
-                            <div class="text">12345热线</div></a>
-                        </li>
-                        <li class="icon-assignment"><a href="">
-                            <div class="icon-svg "><svg class="icon"><use xlink:href="#icon-assignment"></use></svg></div>
-                            <div class="text">监督投诉</div></a>
-                        </li>
-                        <li class="icon-wallet"><a href="">
-                            <div class="icon-svg "><svg class="icon"><use xlink:href="#icon-wallet"></use></svg></div>
-                            <div class="text">网上调查</div></a>
-                        </li>
-                        <li class="icon-comments"><a href="">
-                            <div class="icon-svg "><svg class="icon"><use xlink:href="#icon-comments"></use></svg></div>
-                            <div class="text">谏言献策</div></a>
-                        </li>
-                        <li class="icon-group"><a href="">
-                            <div class="icon-svg "><svg class="icon"><use xlink:href="#icon-group"></use></svg></div>
-                            <div class="text">民意征集</div></a>
-                        </li>
+                        <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="1" PAGESIZE="0" CHANNELCODE="jrjr">
+                            <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="24">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM-dd">
+                                发布时间</CMSPRO_DOCUMENT></span></li>
+                        </CMSPRO_DOCUMENTS>
+                    </ul>
+                </div>
+            </div><div class="new-content">
+            <div class="new-inline">
+                <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0" PAGESIZE="0" CHANNELCODE="xzdt">
+                    <p class="title"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="22">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT></p>
+                    <p class="content"><CMSPRO_DOCUMENT FIELD="content" NUM="86">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</CMSPRO_DOCUMENT></p>
+                </CMSPRO_DOCUMENTS>
+            </div>
+            <div class="new-box">
+                <ul>
+                    <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="1" PAGESIZE="0" CHANNELCODE="xzdt">
+                        <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="24">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM-dd">
+                            发布时间</CMSPRO_DOCUMENT></span></li>
+                    </CMSPRO_DOCUMENTS>
+                </ul>
+            </div>
+        </div><div class="new-content">
+            <div class="new-inline">
+                <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0" PAGESIZE="0" CHANNELCODE="bmdt">
+                    <p class="title"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="22">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT></p>
+                    <p class="content"><CMSPRO_DOCUMENT FIELD="content" NUM="86">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</CMSPRO_DOCUMENT></p>
+                </CMSPRO_DOCUMENTS>
+            </div>
+            <div class="new-box">
+                <ul>
+                    <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="1" PAGESIZE="0" CHANNELCODE="bmdt">
+                        <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="24">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM-dd">
+                            发布时间</CMSPRO_DOCUMENT></span></li>
+                    </CMSPRO_DOCUMENTS>
+                </ul>
+            </div>
+        </div><div class="new-content">
+            <div class="new-inline">
+                <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0" PAGESIZE="0" CHANNELCODE="tzgg">
+                    <p class="title"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="22">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT></p>
+                    <p class="content"><CMSPRO_DOCUMENT FIELD="content" NUM="86">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</CMSPRO_DOCUMENT></p>
+                </CMSPRO_DOCUMENTS>
+            </div>
+            <div class="new-box">
+                <ul>
+                    <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="1" PAGESIZE="0" CHANNELCODE="tzgg">
+                        <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="24">标题标题标题标题标题标题标题标题标题标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM-dd">
+                            发布时间</CMSPRO_DOCUMENT></span></li>
+                    </CMSPRO_DOCUMENTS>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- 新闻列表 end -->
+</div>
+<!-- 新闻资讯 end-->
+<!-- 魅力句容 begin-->
+<div class="nav-box lt clear">
+    <div class="charm-left lt">
+        <div class="charm-title">
+            <a href="<CMSPRO_CHANNEL CODE='csgk' FIELD='url'></CMSPRO_CHANNEL>" class="hover"><CMSPRO_CHANNEL CODE='csgk' FIELD='channelName'>栏目标题</CMSPRO_CHANNEL></a>
+            <a href="<CMSPRO_CHANNEL CODE='jjfz' FIELD='url'></CMSPRO_CHANNEL>"><CMSPRO_CHANNEL CODE='jjfz' FIELD='channelName'>栏目标题</CMSPRO_CHANNEL></a>
+            <a href="<CMSPRO_CHANNEL CODE='shsy' FIELD='url'></CMSPRO_CHANNEL>"><CMSPRO_CHANNEL CODE='shsy' FIELD='channelName'>栏目标题</CMSPRO_CHANNEL></a>
+        </div>
+        <div class="charm-list">
+            <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0" PAGESIZE="0" CHANNELCODE="csgk">
+                <div class="charm-content" style="display: block;">
+                    <CMSPRO_DOCUMENT FIELD="content" NUM="150">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</CMSPRO_DOCUMENT>
+                </div>
+            </CMSPRO_DOCUMENTS>
+            <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0" PAGESIZE="0" CHANNELCODE="jjfz">
+                <div class="charm-content">
+                    <CMSPRO_DOCUMENT FIELD="content" NUM="150">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</CMSPRO_DOCUMENT>
+                </div>
+            </CMSPRO_DOCUMENTS>
+            <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0" PAGESIZE="0" CHANNELCODE="shsy">
+                <div class="charm-content">
+                    <CMSPRO_DOCUMENT FIELD="content" NUM="150">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</CMSPRO_DOCUMENT>
+                </div>
+            </CMSPRO_DOCUMENTS>
+        </div>
+        <div class="charm-travel-content">
+            <ul>
+                <a href="<CMSPRO_CHANNEL CODE='eat' FIELD='url'></CMSPRO_CHANNEL>" title="吃" >
+                    <li class="eat">
+                        <svg class="icon icon-food">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-food"></use>
+                        </svg>
+                    </li>
+                </a> <a href="<CMSPRO_CHANNEL CODE='live' FIELD='url'></CMSPRO_CHANNEL>" title="住">
+                <li class="ml8 live hover">
+                    <svg class="icon icon-home2">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-home2"></use>
+                    </svg>
+                </li>
+            </a> <a href="<CMSPRO_CHANNEL CODE='going' FIELD='url'></CMSPRO_CHANNEL>" title="行">
+                <li class="go ml8">
+                    <svg class="icon icon-automobile">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-automobile"></use>
+                    </svg>
+                </li>
+            </a> <a href="<CMSPRO_CHANNEL CODE='tour' FIELD='url'></CMSPRO_CHANNEL>" title="游">
+                <li class="ml10 tour">
+                    <svg class="icon icon-flight">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-flight"></use>
+                    </svg>
+                </li>
+            </a> <a href="<CMSPRO_CHANNEL CODE='shop' FIELD='url'></CMSPRO_CHANNEL>" title="购" class="hover">
+                <li class="shop ml8">
+                    <svg class="icon icon-shopping-cart">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                             xlink:href="#icon-shopping-cart"></use>
+                    </svg>
+                </li>
+            </a> <a href="<CMSPRO_CHANNEL CODE='play' FIELD='url'></CMSPRO_CHANNEL>" title="娱">
+                <li class="ml8 play">
+                    <svg class="icon icon-microphone">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-microphone"></use>
+                    </svg>
+                </li>
+            </a></ul>
+        </div>
+    </div>
+    <div class="charm-right rt clear">
+        <CMSPRO_DOCUMENTS CHANNELCODE="jrfg" DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="0">
+            <div class="charm-right-box charm-right-box-one lt">
+                <a href="<CMSPRO_DOCUMENT field='url'></CMSPRO_DOCUMENT>" target="_blank">
+                    <div class="charm-right-img">
+                        <img src="<CMSPRO_APPENDIXS MODE='ALL' STARTPOS='0' NUM='1'><CMSPRO_APPENDIX FIELD='path'></CMSPRO_APPENDIX></CMSPRO_APPENDIXS> "/>
+                    </div>
+                    <div class="charm-right-bottom"></div>
+                    <div class="charm-right-text"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="false" NUM="10">标题</CMSPRO_DOCUMENT></div>
+                </a>
+            </div>
+        </CMSPRO_DOCUMENTS>
+        <CMSPRO_DOCUMENTS CHANNELCODE="jrfg" DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="1">
+            <div class="charm-right-box charm-right-box-two lt ml15">
+                <a  href="<CMSPRO_DOCUMENT field='url'></CMSPRO_DOCUMENT>" target="_blank">
+                    <div class="charm-right-img">
+                        <img src="<CMSPRO_APPENDIXS MODE='ALL' STARTPOS='0' NUM='1'><CMSPRO_APPENDIX FIELD='path'></CMSPRO_APPENDIX></CMSPRO_APPENDIXS> "/>
+                    </div>
+                    <div class="charm-right-bottom"></div>
+                    <div class="charm-right-text"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="false" NUM="10">标题</CMSPRO_DOCUMENT></div>
+                </a>
+            </div>
+        </CMSPRO_DOCUMENTS>
+        <CMSPRO_DOCUMENTS CHANNELCODE="jrfg" DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="2">
+            <div class="charm-right-box charm-right-box-three lt">
+                <a href="<CMSPRO_DOCUMENT field='url'></CMSPRO_DOCUMENT>" target="_blank">
+                    <div class="charm-right-img">
+                        <img src="<CMSPRO_APPENDIXS MODE='ALL' STARTPOS='0' NUM='1'><CMSPRO_APPENDIX FIELD='path'></CMSPRO_APPENDIX></CMSPRO_APPENDIXS> "/>
+                    </div>
+                    <div class="charm-right-bottom"></div>
+                    <div class="charm-right-text"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="false" NUM="10">标题</CMSPRO_DOCUMENT></div>
+                </a>
+            </div>
+        </CMSPRO_DOCUMENTS>
+        <CMSPRO_DOCUMENTS CHANNELCODE="jrfg" DOCUMENTTYPE="0|1|2|3" NUM="1" STARTPOS="3">
+            <div class="charm-right-box  charm-right-box-four lt ml15">
+                <a href="<CMSPRO_DOCUMENT field='url'></CMSPRO_DOCUMENT>" target="_blank">
+                    <div class="charm-right-img">
+                        <img src="<CMSPRO_APPENDIXS MODE='ALL' STARTPOS='0' NUM='1'><CMSPRO_APPENDIX FIELD='path'></CMSPRO_APPENDIX></CMSPRO_APPENDIXS> "/>
+                    </div>
+                    <div class="charm-right-bottom"></div>
+                    <div class="charm-right-text"><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="false" NUM="10">标题</CMSPRO_DOCUMENT></div>
+                </a>
+            </div>
+        </CMSPRO_DOCUMENTS>
+    </div>
+</div>
+<!-- 魅力句容 end-->
+<!-- 信息公开 begin-->
+<div class="nav-box lt clear">
+    <div class="information-left lt">
+        <div class="information-title">市政府主要领导</div>
+        <div class="information-mayor clear">
+            <div class="img lt">
+                <img src="images/www/mayor.jpg" alt=""/>
+            </div>
+            <div class="list rt">
+                <p class="mayor"><a href="<CMSPRO_CHANNEL CODE='mayor' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">市长　<CMSPRO_CHANNEL CODE='mayor' FIELD='channelName'>栏目标题</CMSPRO_CHANNEL></a></p>
+                <p><a href="<CMSPRO_CHANNEL CODE='xwfz' FIELD='url'></CMSPRO_CHANNEL>">[&nbsp;工作分工&nbsp;]</a></p>
+                <p><a href="<CMSPRO_CHANNEL CODE='xwjl' FIELD='url'></CMSPRO_CHANNEL>">[&nbsp;个人简历&nbsp;]</a></p>
+                <p><a href="<CMSPRO_CHANNEL CODE='xwhd' FIELD='url'></CMSPRO_CHANNEL>">[&nbsp;重要活动&nbsp;]</a></p>
+            </div>
+        </div>
+        <div class="information-mayor-list">
+            <a href="<CMSPRO_CHANNEL CODE='panqun' FIELD='url'></CMSPRO_CHANNEL>">潘　群 [副市长] </a>
+            <a href="<CMSPRO_CHANNEL CODE='wangqin' FIELD='url'></CMSPRO_CHANNEL>">王　琴 [副市长] </a>
+            <a href="<CMSPRO_CHANNEL CODE='wanghua' FIELD='url'></CMSPRO_CHANNEL>">王　华 [副市长] </a>
+            <a href="<CMSPRO_CHANNEL CODE='yaohua' FIELD='url'></CMSPRO_CHANNEL>">姚　华 [副市长] </a>
+            <a href="<CMSPRO_CHANNEL CODE='swj' FIELD='url'></CMSPRO_CHANNEL>">孙卫军 [副市长] </a>
+            <a href="<CMSPRO_CHANNEL CODE='yangyuan' FIELD='url'></CMSPRO_CHANNEL>">仰　远 [副市长] </a>
+            <a href="<CMSPRO_CHANNEL CODE='plh' FIELD='url'></CMSPRO_CHANNEL>">王乙焯 [副市长] </a>
+        </div>
+    </div>
+    <div class="information-right rt">
+        <div class="information-right-box">
+            <div class="information-right-box-title">
+                <a href="<CMSPRO_CHANNEL CODE='xxgk' FIELD='url'></CMSPRO_CHANNEL>" class="hover" target="_blank">最新信息</a><a href="<CMSPRO_CHANNEL CODE='szfrs' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">人事信息</a><a href="<CMSPRO_CHANNEL CODE='jjhsh' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">统计信息</a><a href="<CMSPRO_CHANNEL CODE='czyjs' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">财政信息</a>
+            </div>
+            <div class="information-right-box-list">
+                <ul style="display: block;">
+                    <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="0" PAGESIZE="0" CHANNELCODE="xxgk">
+                        <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="38">
+                            标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM/dd">发布时间</CMSPRO_DOCUMENT></span></li>
+                    </CMSPRO_DOCUMENTS>
+                </ul><ul>
+                <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="0" PAGESIZE="0" CHANNELCODE="szfrs">
+                    <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="38">
+                        标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM/dd">发布时间</CMSPRO_DOCUMENT></span></li>
+                </CMSPRO_DOCUMENTS>
+            </ul><ul>
+                <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="0" PAGESIZE="0" CHANNELCODE="jjhsh">
+                    <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="38">
+                        标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM/dd">发布时间</CMSPRO_DOCUMENT></span></li>
+                </CMSPRO_DOCUMENTS>
+            </ul><ul>
+                <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="0" PAGESIZE="0" CHANNELCODE="czyjs">
+                    <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" NUM="38">
+                        标题标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM/dd">发布时间</CMSPRO_DOCUMENT></span></li>
+                </CMSPRO_DOCUMENTS>
+            </ul>
+            </div>
+            <div class="information-right-col">
+                <div class="information-right-col-title">政府信息公开</div>
+                <div class="information-right-col-list clear">
+                    <ul>
+                        <li><svg class="icon icon-file"><use xlink:href="#icon-file"></use></svg><a href="<CMSPRO_CHANNEL CODE='xxgkzn' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">市政府信息公开指南</a></li>
+                        <li><svg class="icon icon-file"><use xlink:href="#icon-file"></use></svg><a href="<CMSPRO_CHANNEL CODE='xxgkml' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">市政府信息公开目录</a></li>
+                        <li><svg class="icon icon-file"><use xlink:href="#icon-file"></use></svg><a href="<CMSPRO_CHANNEL CODE='xxgkzd' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">市政府信息公开制度</a></li>
+                        <li><svg class="icon icon-file"><use xlink:href="#icon-file"></use></svg><a href="<CMSPRO_CHANNEL CODE='xxgknb' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">市政府信息公开年报</a></li>
+                        <li><svg class="icon icon-file"><use xlink:href="#icon-file"></use></svg><a href="<CMSPRO_CHANNEL CODE='ysqgk' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">依　申　请　公　开</a></li>
+                        <li><svg class="icon icon-file"><use xlink:href="#icon-file"></use></svg><a href="<CMSPRO_CHANNEL CODE='gzyjx' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">政府信息公开工作意见箱</a></li>
                     </ul>
                 </div>
             </div>
-            <!-- 公共参与 end-->
-            <!-- 站群导航 begin-->
-            <div class="nav-box lt clear">
-                <div class="group-left lt">
-                    <div class="letter-search">
-                        <a href="">A</a>
-                        <a href="">B</a>
-                        <a href="">C</a>
-                        <a href="">D</a>
-                        <a href="">E</a>
-                        <a href="">F</a>
-                        <a href="">G</a>
-                        <a href="" class="hover">H</a>
-                        <a href="">I</a>
-                        <a href="">J</a>
-                        <a href="">K</a>
-                        <a href="">L</a>
-                        <a href="">M</a>
-                        <a href="">N</a>
-                        <a href="">O</a>
-                        <a href="">P</a>
-                        <a href="">Q</a>
-                        <a href="">R</a>
-                        <a href="">S</a>
-                        <a href="">T</a>
-                        <a href="">U</a>
-                        <a href="">V</a>
-                        <a href="">W</a>
-                        <a href="">X</a>
-                        <a href="">Y</a>
-                        <a href="">Z</a>
-                    </div>
-                    <div class="letter-search-content">
-                        <ul>
-                            <li><a href="">化工园区</a><a href="">化工园区</a><a href="">化工园区</a><a href="">化工园区</a></li>
-                        </ul>
-                    </div>
-                    <div class="group-dep">人大、政协</div>
-                    <div class="letter-search-content">
-                        <a href="">人大</a>
-                        <a href="">政协</a>
-                    </div>
-                    <div class="group-dep group-dep-system"><a href="">党群系统</a><a href="">政法系统</a><a href="">文卫系统</a><a href="">财贸系统</a><a href="">工交系统</a><a href="">农水系统</a></div>
-                    <div class="group-dep-list">
-                        <!-- 党群系统 begin-->
-                        <ul style="display: block">
-                            <li>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                            </li>
-                        </ul>
-                        <!-- 政法系统 begin-->
-                        <ul>
-                            <li>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                            </li>
-                        </ul>
-                        <!-- 文卫系统 begin-->
-                        <ul>
-                            <li>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                            </li>
-                        </ul>
-                        <!-- 财贸系统 begin-->
-                        <ul>
-                            <li>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                            </li>
-                        </ul>
-                        <!-- 工交系统 begin-->
-                        <ul>
-                            <li>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                            </li>
-                        </ul>
-                        <!-- 农水系统 begin-->
-                        <ul>
-                            <li>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                                <a href="">经济开发区</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="group-right rt">
-                    <div id="datePicker"></div>
-                </div>
-            </div>
-            <!-- 站群导航 end-->
         </div>
     </div>
+</div>
+<!-- 信息公开 end-->
+<!-- 公共服务 begin-->
+<div class="nav-box lt clear">
+    <div class="public-join-left lt">
+        <div class="public-join-left-title">
+            <a href="javascript:void(0);" class="hover">居民服务</a><a href="javascript:void(0);">企业服务</a><a href="javascript:void(0);">部门服务</a>
+        </div>
+        <div class="public-join-left-list clear">
+        <!-- 居民服务 -->
+            <ul style="display: block;">
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E5%A9%9A%E5%A7%BB%E7%94%9F%E8%82%B2" target="_black">婚姻生育 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E6%88%B7%E7%B1%8D%E6%8A%A4%E7%85%A7" target="_black">户籍护照 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E5%AD%A6%E6%A0%A1%E6%95%99%E8%82%B2" target="_black">学校教育 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E5%8A%B3%E5%8A%A8%E5%B0%B1%E4%B8%9A" target="_black">劳动就业 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%9A%9C" target="_black">社会保障 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E5%85%AC%E7%94%A8%E4%BA%8B%E4%B8%9A" target="_black">公共事业 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E9%82%AE%E6%94%BF%E6%9C%8D%E5%8A%A1" target="_black">邮政服务 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E4%BA%A4%E9%80%9A%E9%A9%BE%E9%A9%B6" target="_black">交通驾驶 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E6%B6%88%E8%B4%B9%E7%BB%B4%E6%9D%83" target="_black">消费维权 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E6%96%87%E5%8C%96%E5%A8%B1%E4%B9%90" target="_black">文化娱乐 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83" target="_black">知识产权 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E6%97%85%E6%B8%B8%E5%87%BA%E8%A1%8C" target="_black">旅游出行 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E5%9C%9F%E5%9C%B0%E6%88%BF%E4%BA%A7" target="_black">土地房产 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E8%B4%B8%E6%98%93%E7%A7%9F%E8%B5%81" target="_black">贸易租凭 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E7%90%86%E8%B4%A2%E7%BA%B3%E7%A8%8E" target="_black">理财纳税 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E7%A4%BE%E4%BC%9A%E6%B2%BB%E5%AE%89" target="_black">社会治安 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E6%B3%95%E5%BE%8B%E6%8F%B4%E5%8A%A9" target="_black">法律援助 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E5%BA%94%E6%80%A5%E6%95%91%E5%8A%A9" target="_black">应急救助 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E6%B0%91%E6%97%8F%E5%AE%97%E6%95%99" target="_black">民族宗教 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E5%85%B5%E5%BD%B9%E8%BD%AC%E4%B8%9A" target="_black">兵役转业 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E6%AD%BB%E4%BA%A1%E6%AE%A1%E8%91%AC" target="_black">死亡殡葬 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E5%8C%BB%E7%96%97%E5%8D%AB%E7%94%9F" target="_black">医疗卫生 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/gerfw.seam?codename=%E5%85%B6%E5%AE%83%E4%BA%8B%E5%8A%A1" target="_black">其他事务 </a></li>
+            </ul>
+        <!-- 企业服务 -->
+            <ul>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E9%A1%B9%E7%9B%AE%E5%AE%A1%E6%89%B9" target="_black">项目审批 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E6%94%BF%E5%BA%9C%E9%87%87%E8%B4%AD" target="_black">政府采购 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E6%94%BF%E5%BA%9C%E8%B5%84%E5%8A%A9" target="_black">政府资助 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E5%BC%80%E5%8A%9E%E8%AE%BE%E7%AB%8B" target="_black">开办设立 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E4%BC%81%E4%B8%9A%E8%B5%84%E8%B4%A8" target="_black">企业资质 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E5%B9%B4%E6%A3%80%E5%B9%B4%E5%AE%A1" target="_black">年检年审 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E4%BC%81%E4%B8%9A%E7%BA%B3%E7%A8%8E" target="_black">企业纳税 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E4%BB%B7%E6%A0%BC%E7%AE%A1%E7%90%86" target="_black">价格管理 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E5%B7%A5%E5%95%86%E7%AE%A1%E7%90%86" target="_black">工商管理 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E8%B4%A8%E9%87%8F%E7%9B%91%E7%9D%A3" target="_black">质量监督 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E5%AE%89%E5%85%A8%E9%98%B2%E6%8A%A4" target="_black">安全防护 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83" target="_black">知识产权 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E5%8A%B3%E5%8A%A8%E4%BF%9D%E9%9A%9C" target="_black">劳动保障 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E6%89%A7%E4%B8%9A%E8%B5%84%E6%A0%BC" target="_black">执业资格 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E5%BB%BA%E8%AE%BE%E7%AE%A1%E7%90%86" target="_black">建设管理 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E5%AF%B9%E5%A4%96%E7%BB%8F%E8%B4%B8" target="_black">对外经贸 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E7%8E%AF%E5%A2%83%E4%BF%9D%E6%8A%A4" target="_black">环境保护 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E7%A0%B4%E4%BA%A7%E6%B3%A8%E9%94%80" target="_black">破产注销 </a></li>
+                <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/qiyfw.seam?codename=%E5%85%B6%E5%AE%83%E4%BA%8B%E5%8A%A1" target="_black">其他事务 </a></li>
+            </ul>
+        <!-- 部门服务 -->
+            <ul>
+                <li><i></i><a href="" target="_black">组织人事部 </a></li>
+                <li><i></i><a href="" target="_black">经济发展局 </a></li>
+                <li><i></i><a href="" target="_black">社会发展局 </a></li>
+                <li><i></i><a href="" target="_black">财政局 </a></li>
+                <li><i></i><a href="" target="_black">城乡建设局 </a></li>
+                <li><i></i><a href="" target="_black">规划局 </a></li>
+                <li><i></i><a href="" target="_black">行政执法局 </a></li>
+                <li><i></i><a href="" target="_black">安监局 </a></li>
+                <li><i></i><a href="" target="_black">环保局 </a></li>
+                <li><i></i><a href="" target="_black">句容公安分局 </a></li>
+                <li><i></i><a href="" target="_black">国土分局 </a></li>
+                <li><i></i><a href="" target="_black">物价分局 </a></li>
+                <li><i></i><a href="" target="_black">句容交通分局 </a></li>
+                <li><i></i><a href="" target="_black">句容消防大队 </a></li>
+            </ul>
+        </div>
+        <div class="service-list">
+            <ul>
+                <li>
+                    <a href="<CMSPRO_CHANNEL CODE='jyfw' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
+                        <div class="icon-svg"><svg class="icon icon-images"><use xlink:href="#icon-school"></use></svg></div>
+                        <div class="text">教育服务</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="<CMSPRO_CHANNEL CODE='sbfw' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
+                        <div class="icon-svg"><svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg></div>
+                        <div class="text">社保服务</div>
+                    </a>
+                </li>
+                <li><a href="<CMSPRO_CHANNEL CODE='ylfw' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
+                    <div class="icon-svg"><svg class="icon icon-aid-kit"><use xlink:href="#icon-aid-kit"></use></svg></div>
+                    <div class="text">医疗服务</div></a>
+                </li>
+                <li><a href="<CMSPRO_CHANNEL CODE='zffw' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
+                    <div class="icon-svg"><svg class="icon icon-office"><use xlink:href="#icon-home3"></use></svg></div>
+                    <div class="text">住房服务</div></a>
+                </li>
+                <li><a href="<CMSPRO_CHANNEL CODE='hysy' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
+                    <div class="icon-svg"><svg class="icon icon-users"><use xlink:href="#icon-users"></use></svg></div>
+                    <div class="text">婚姻收养</div></a>
+                </li>
+                <li><a href="<CMSPRO_CHANNEL CODE='gysy' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
+                    <div class="icon-svg"><svg class="icon icon-chart"><use xlink:href="#icon-chart"></use></svg></div>
+                    <div class="text">公共事业</div></a>
+                </li>
+                <li><a href="<CMSPRO_CHANNEL CODE='zjbl' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
+                    <div class="icon-svg"><svg class="icon icon-vcard"><use xlink:href="#icon-vcard"></use></svg></div>
+                    <div class="text">证件办理</div></a>
+                </li>
+                <li><a href="<CMSPRO_CHANNEL CODE='xxgkzn' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
+                    <div class="icon-svg"><svg class="icon icon-images"><use xlink:href="#icon-briefcase"></use></svg></div>
+                    <div class="text">招商引资</div></a>
+                </li>
+                <li><a href="<CMSPRO_CHANNEL CODE='jyfwu' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
+                    <div class="icon-svg"><svg class="icon icon-images"><use xlink:href="#icon-user-tie"></use></svg></div>
+                    <div class="text">就业服务</div></a>
+                </li>
+                <li><a href="<CMSPRO_CHANNEL CODE='jyns' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
+                    <div class="icon-svg"><svg class="icon icon-images"><use xlink:href="#icon-coin-dollar"></use></svg></div>
+                    <div class="text">经营纳税</div></a>
+                </li>
+                <li><a href="<CMSPRO_CHANNEL CODE='jtfw' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
+                    <div class="icon-svg"><svg class="icon icon-images"><use xlink:href="#icon-bus"></use></svg></div>
+                    <div class="text">交通服务</div></a>
+                </li>
+                <li><a href="<CMSPRO_CHANNEL CODE='snfw' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
+                    <div class="icon-svg"><svg class="icon icon-tree"><use xlink:href="#icon-tree"></use></svg></div>
+                    <div class="text">三农服务</div></a>
+                </li>
+                <li><a href="<CMSPRO_CHANNEL CODE='qykb' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">
+                    <div class="icon-svg"><svg class="icon icon-images"><use xlink:href="#icon-office"></use></svg></div>
+                    <div class="text">企业开办</div></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="public-join-right rt">
+        <div class="public-join-right-box">
+            <div class="public-join-right-box-title">行政权力公开</div>
+            <div class="public-join-right-box-list">
+                <ul>
+                    <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/MoreInfo_Qlyx.seam?qlkind=XK" target="_blank">行政许可</a></li>
+                    <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/MoreInfo_Qlyx.seam?qlkind=CF" target="_blank">行政处罚</a></li>
+                    <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/MoreInfo_Qlyx.seam?qlkind=ZS" target="_blank">行政征收</a></li>
+                    <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/MoreInfo_Qlyx.seam?qlkind=SP" target="_blank">行政审批</a></li>
+                    <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/MoreInfo_Qlyx.seam?qlkind=QZ" target="_blank">行政强制</a></li>
+                    <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/MoreInfo_Qlyx.seam?qlkind=ZY" target="_blank">行政征用</a></li>
+                    <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/MoreInfo_Qlyx.seam?qlkind=JL" target="_blank">行政奖励</a></li>
+                    <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/MoreInfo_Qlyx.seam?qlkind=QR" target="_blank">行政确认</a></li>
+                    <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/MoreInfo_Qlyx.seam?qlkind=CJ" target="_blank">行政裁决</a></li>
+                    <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/MoreInfo_Qlyx.seam?qlkind=GF" target="_blank">行政给付</a></li>
+                    <li><i></i><a href="http://218.3.140.91/epointjwebqlygjr/qlyg/MoreInfo_Qlyx.seam?qlkind=QT" target="_blank">其他</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="public-join-right-box">
+            <div class="public-join-right-box-title"><a href="<CMSPRO_CHANNEL CODE='bjfwtd' FIELD='url'></CMSPRO_CHANNEL>" target="_blank">便民服务</a></div>
+            <div class="public-join-bmlist">
+                <ul>
+                    <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="4" STARTPOS="0" PAGESIZE="0" CHANNELCODE="bjfwtd">
+                    <li><i></i><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true"  NUM="20">标题</CMSPRO_DOCUMENT></li>
+                        </CMSPRO_DOCUMENTS>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 公共服务 end-->
+<!-- 公共参与 begin-->
+<div class="nav-box lt clear">
+    <div class="public-service-left lt">
+        <div class="title">在线访谈<span><a href="">进入访谈>></a></span></div>
+        <div class="img">
+            <img width="245" height="180" src="images/www/zxft.jpg" alt=""/>
+        </div>
+        <div class="content">
+            <table>
+                <tbody>
+                <tr>
+                    <td><span>主题:</span></td>
+                    <td>改进作风增质效 服务名声促发展</td>
+                </tr>
+                <tr>
+                    <td><span>时间:</span></td>
+                    <td>2014-09-20下午15：00-16：00 </td>
+                </tr>
+                <tr>
+                    <td valign="top" style="vertical-align:top"><span>嘉宾:</span></td>
+                    <td><p>副市长、市公安局局长刘亚军</p><p>市民代表</p></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="public-service-center lt">
+        <div class="public-service-center-title">
+            <a href="" class="hover">寄语市长</a><a href="">最新回复</a><a href="">我要写信</a>
+        </div>
+        <div class="public-service-center-list">
+            <ul>
+                <li>
+                    <div class="title"><a href="">菱塘职中这样选拔干部</a><span>2015-05-12</span></div>
+                    <div class="content">夏局长你好： 菱塘职中4月份未经竞选和公示，直接任命王某为中层主任，符合干部管理制度吗？</div>
+                </li><li>
+                <div class="title"><a href="">菱塘职中这样选拔干部</a><span>2015-05-12</span></div>
+                <div class="content">夏局长你好： 菱塘职中4月份未经竞选和公示，直接任命王某为中层主任，符合干部管理制度吗？</div>
+            </li><li>
+                <div class="title"><a href="">菱塘职中这样选拔干部</a><span>2015-05-12</span></div>
+                <div class="content">夏局长你好： 菱塘职中4月份未经竞选和公示，直接任命王某为中层主任，符合干部管理制度吗？</div>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <div class="public-service-right rt">
+        <ul>
+            <li class="icon-mail"><a href="">
+                <div class="icon-svg "><svg class="icon"><use xlink:href="#icon-mail"></use></svg></div>
+                <div class="text">书记信箱</div></a>
+            </li>
+            <li class="icon-phone"><a href="">
+                <div class="icon-svg "><svg class="icon"><use xlink:href="#icon-phone"></use></svg></div>
+                <div class="text">12345热线</div></a>
+            </li>
+            <li class="icon-assignment"><a href="">
+                <div class="icon-svg "><svg class="icon"><use xlink:href="#icon-assignment"></use></svg></div>
+                <div class="text">监督投诉</div></a>
+            </li>
+            <li class="icon-wallet"><a href="">
+                <div class="icon-svg "><svg class="icon"><use xlink:href="#icon-wallet"></use></svg></div>
+                <div class="text">网上调查</div></a>
+            </li>
+            <li class="icon-comments"><a href="">
+                <div class="icon-svg "><svg class="icon"><use xlink:href="#icon-comments"></use></svg></div>
+                <div class="text">谏言献策</div></a>
+            </li>
+            <li class="icon-group"><a href="">
+                <div class="icon-svg "><svg class="icon"><use xlink:href="#icon-group"></use></svg></div>
+                <div class="text">民意征集</div></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 公共参与 end-->
+<!-- 站群导航 begin-->
+<div class="nav-box lt clear">
+<div class="group-left lt">
+<div class="letter-search letter-search-a">
+    <a href="javasciprt:void(0);" class="hover">A</a>
+    <a href="javasciprt:void(0);">B</a>
+    <a href="javasciprt:void(0);">C</a>
+    <a href="javasciprt:void(0);">D</a>
+    <a href="javasciprt:void(0);">E</a>
+    <a href="javasciprt:void(0);">F</a>
+    <a href="javasciprt:void(0);">G</a>
+    <a href="javasciprt:void(0);">H</a>
+    <a href="javasciprt:void(0);">I</a>
+    <a href="javasciprt:void(0);">J</a>
+    <a href="javasciprt:void(0);">K</a>
+    <a href="javasciprt:void(0);">L</a>
+    <a href="javasciprt:void(0);">M</a>
+    <a href="javasciprt:void(0);">N</a>
+    <a href="javasciprt:void(0);">O</a>
+    <a href="javasciprt:void(0);">P</a>
+    <a href="javasciprt:void(0);">Q</a>
+    <a href="javasciprt:void(0);">R</a>
+    <a href="javasciprt:void(0);">S</a>
+    <a href="javasciprt:void(0);">T</a>
+    <a href="javasciprt:void(0);">U</a>
+    <a href="javasciprt:void(0);">V</a>
+    <a href="javasciprt:void(0);">W</a>
+    <a href="javasciprt:void(0);">X</a>
+    <a href="javasciprt:void(0);">Y</a>
+    <a href="javasciprt:void(0);">Z</a>
+</div>
+<div class="letter-search-content">
+    <!-- a -->
+    <ul style="display: block;">
+        <li><a href="http://www.jrsafety.gov.cn/" target="_black">安监局</a></li>
+    </ul>
+    <!-- b -->
+    <ul>
+        <li><a href="http://www.jrbb.gov.cn/" target="_black">编办</a></li>
+    </ul>
+    <!-- c -->
+    <ul>
+        <li><a href="http://www.jrcl.gov.cn/" target="_black"">残联</a>
+            <a href="http://www.jsjrcz.gov.cn/" target="_black">财政局</a>
+            <a href="http://www.jrcg.cn/" target="_black">城管局</a>
+        </li>
+    </ul>
+    <!-- d -->
+    <ul>
+        <li>
+            <a href="http://www.jrxf.gov.cn/sonweb/dzj/" target="_black">地震局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/daj/" target="_black">档案局</a>
+            <a href="http://www.jrnews.cn/jrds/" target="_black">地税局</a>
+        </li>
+    </ul>
+    <!-- e -->
+    <ul>
+        <li></li>
+    </ul>
+    <!-- f -->
+    <ul>
+        <li>
+            <a href="http://www.jsjrfy.gov.cn/" target="_black">法院</a>
+            <a href="http://www.jrnews.cn/" target="_black">福地公司</a>
+            <a href="http://www.jrfgw.gov.cn/" target="_black">发改经信委</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/fcyfwzx/" target="_black">房产业发展中心</a>
+        </li>
+    </ul>
+    <!-- g -->
+    <ul>
+        <li>
+            <a href="http://www.jrgsl.gov.cn/" target="_black">工商联</a>
+            <a href="http://www.jrga.gov.cn/" target="_black">公安局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/gsj/" target="_black">国税局</a>
+            <a href="http://www.jrcoop.com/" target="_black">供销社</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/jrgsj/" target="_black">工商局</a>
+            <a href="http://wmdw.jswmw.com/home/?lid=39" target="_black">公路管理处</a>
+            <a href="http://www.jrghj.gov.cn/" target="_black">规划局</a>
+            <a href="http://www.jrmlr.gov.cn/" target="_black">国土局</a>
+
+        </li>
+    </ul>
+    <!-- h -->
+    <ul>
+        <li>
+            <a href="http://www.jrxf.gov.cn/sonweb/hszh/" target="_black">红十字会</a>
+
+            <a href="http://www.jrhb.gov.cn/" target="_black">环保局</a>
+
+            <a href="http://www.jrmh.cn/sonweb/jrhdc/" target="_black">航道处</a>
+
+        </li>
+    </ul>
+    <!-- i -->
+    <ul>
+        <li></li>
+    </ul>
+    <!-- j -->
+    <ul>
+        <li>
+            <a href="http://jrw.zhenjiang.gov.cn/" target="_black">金融办</a>
+            <a href="http://www.jrjw.gov.cn/" target="_black">纪委（监察局）</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/jgdgw/" target="_black">机关党工委</a>
+            <a href="http://www.jrjcy.gov.cn/" target="_black">检察院</a>
+            <a href="http://www.jre.net.cn/allStation/jrjy/www_jre_net_cn/index.html?domainName=www.jre.net.cn/" target="_black">教育局</a>
+            <a href="http://www.jrcdc.com/" target="_black">疾控中心</a>
+            <a href="http://www.jrstats.gov.cn/index1.asp" target="_black">句容调查队</a>
+
+        </li>
+    </ul>
+    <!-- k -->
+    <ul>
+        <li>
+            <a href="http://jurong.sti.js.cn/" target="_black">科技局</a>
+            <a href="http://www.jsjrkx.cn/" target="_black">科协</a>
+        </li>
+    </ul>
+    <!-- l -->
+    <ul>
+        <li>
+            <a href="http://www.jrjob.org.cn/" target="_black">劳动就业管理中心</a>
+            <a href="http://jrlgb.fdjr.cn/" target="_black">老干部局</a>
+            <a href="http://www.jrlsj.gov.cn/" target="_black">粮食储存中心</a>
+        </li>
+    </ul>
+    <!-- m -->
+    <ul>
+        <li>
+            <a href="http://www.jrxf.gov.cn/sonweb/mzlyj/" target="_black">民宗旅游局</a>
+            <a href="http://www.jrmz.gov.cn/" target="_black">民政局</a>
+        </li>
+    </ul>
+    <!-- n -->
+    <ul>
+        <li>
+
+            <a href="http://www.jsjrny.com/" target="_black">农办</a>
+            <a href="http://www.jsjrny.com/" target="_black">农委</a>
+
+        </li>
+    </ul>
+    <!-- o -->
+    <ul>
+        <li></li>
+    </ul>
+    <!-- p -->
+    <ul>
+        <li></li>
+    </ul>
+    <!-- q -->
+    <ul>
+        <li>
+            <a href="http://www.jrxf.gov.cn/sonweb/qxj/" target="_black">气象局</a>
+        </li>
+    </ul>
+    <!-- r -->
+    <ul>
+        <li>
+            <a href="http://www.jrxf.gov.cn/sonweb/rdb/" target="_black">人大办</a>
+            <a href="http://www.jrhrss.gov.cn/" target="_black">人社局</a>
+            <a href="http://www.jsjrhr.cn/" target="_black">人才服务中心</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/rkjsw/" target="_black">人口计生委</a>
+            <a href="http://www.jrrmyy.cn/" target="_black">人民医院</a>
+        </li>
+    </ul>
+    <!-- s -->
+    <ul>
+        <li>
+
+            <a href="http://www.jrxf.gov.cn/sonweb/swb/" target="_black">市委办</a>
+            <a href="http://www.jrhrss.gov.cn/" target="_black">社保中心</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/szb/" target="_black">史志办</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/sfj/" target="_black">司法局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/dx/" target="_black">市委党校（行政干校）</a>
+            <a href="http://www.jsjrfda.gov.cn/" target="_black">食药监局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/swj/" target="_black">商务局</a>
+            <a href="http://jrxzfw.gov.cn/jrxzfwweb/djzc/" target="_black">市政服务中心</a>
+
+        </li>
+    </ul>
+    <!-- t -->
+    <ul>
+        <li>
+
+            <a href="http://www.jrtzb.com/" target="_black">统战部</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/tsw/" target="_black">团市委</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/tjj/" target="_black">统计局</a>
+
+        </li>
+    </ul>
+    <!-- u -->
+    <ul>
+        <li></li>
+    </ul>
+    <!-- v -->
+    <ul>
+        <li></li>
+    </ul>
+    <!-- w -->
+    <ul>
+        <li>
+
+            <a href="http://www.jrxf.gov.cn/sonweb/wgtyj/" target="_black">文广体育局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/wl/index.asp" target="_black">文联</a>
+            <a href="http://www.jrhealth.gov.cn/" target="_black">卫生局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/wjj/" target="_black">物价局</a>
+
+        </li>
+    </ul>
+    <!-- x -->
+    <ul>
+        <li>
+
+            <a href="http://jrxzfw.gov.cn/jrxzfwweb/" target="_black">行政服务中心</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/xfj/index.asp" target="_black">信访局</a>
+            <a href="http://www.1fangchan.com/shequ/2012/06/xf/" target="_black">消防大队</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/xcb/" target="_black">宣传部</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/xwzx/" target="_black">新闻中心</a>
+
+        </li>
+    </ul>
+    <!-- y -->
+    <ul>
+        <li>
+        <li>
+            <a href="http://www.jryb.net/index.asp" target="_black">医保中心</a>
+            <a href="http://wmdw.jswmw.com/home/?lid=7346" target="_black">烟草专卖局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/ywj/index.asp" target="_black">盐务局</a>
+            <a href="http://www.jrmh.cn/sonweb/jrygc/" target="_black">运管处</a>
+
+        </li>
+    </ul>
+    <!-- z -->
+    <ul>
+        <li>
+            <a href="http://www.jrxf.gov.cn/sonweb/zfb/" target="_black">政府办</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/zxb/" target="_black">政协办</a>
+            <a href="http://www.jrzgh.gov.cn/" target="_black">总工会</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/zfw/">政法委</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/zfw/">政法委</a>
+            <a href="http://www.jrszyy.com/" target="_black">中医院</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/wjj/" target="_black">物价局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/zjjdw/" target="_black">住建局</a>
+
+        </li>
+    </ul>
+
+</div>
+<div class="group-dep">人大、政协</div>
+<div class="letter-search-content">
+    <a href="http://www.jrxf.gov.cn/sonweb/rdb/" target="_black">人大</a>
+    <a href="http://www.jrxf.gov.cn/sonweb/zxb/" target="_black">政协</a>
+</div>
+<div class="group-dep group-dep-system"><a href="javascript:void(0);">党群系统</a><a href="javascript:void(0);">政法系统</a><a href="javascript:void(0);">文卫系统</a><a href="javascript:void(0);">财贸系统</a><a href="javascript:void(0);">工交系统</a><a href="javascript:void(0);">农水系统</a></div>
+<div class="group-dep-list">
+    <!-- 党群系统 begin-->
+    <ul style="display: block">
+        <li>
+            <a href="http://www.jrxf.gov.cn/sonweb/swb/" target="_black">市委办</a>
+            <a href="http://www.jsjrny.com/" target="_black">农办</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/rdb/" target="_black">人大办</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/zfb/" target="_black">政府办</a>
+            <a href="http://jrw.zhenjiang.gov.cn/" target="_black">金融办</a>
+            <a href="http://jrxzfw.gov.cn/jrxzfwweb/" target="_black">行政服务中心</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/zxb/" target="_black">政协办</a>
+            <a href="http://www.jrjw.gov.cn/" target="_black">纪委（监察局）</a>
+            <a href="http://www.jrtzb.com/" target="_black">统战部</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/jgdgw/" target="_black">机关党工委</a>
+            <a href="http://www.jrzgh.gov.cn/" target="_black">总工会</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/tsw/" target="_black">团市委</a>
+            <a href="http://jurong.sti.js.cn/" target="_black">科技局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/dzj/" target="_black">地震局</a>
+            <a href="http://www.jsjrkx.cn/" target="_black">科协</a>
+            <a href="http://www.jrhrss.gov.cn/" target="_black">人社局</a>
+            <a href="http://www.jrhrss.gov.cn/" target="_black">社保中心</a>
+            <a href="http://www.jrjob.org.cn/" target="_black">劳动就业管理中心</a>
+            <a href="http://www.jsjrhr.cn/" target="_black">人才服务中心</a>
+            <a href="http://www.jrbb.gov.cn/" target="_black">编办</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/xfj/index.asp" target="_black">信访局</a>
+            <a href="http://jrlgb.fdjr.cn/" target="_black">老干部局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/daj/" target="_black">档案局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/mzlyj/" target="_black">民宗旅游局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/szb/" target="_black">史志办</a>
+            <a href="http://www.jrgsl.gov.cn/" target="_black">工商联</a>
+        </li>
+    </ul>
+    <!-- 政法系统 begin-->
+    <ul>
+        <li>
+            <a href="http://www.jrxf.gov.cn/sonweb/zfw/">政法委</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/sfj/" target="_black">司法局</a>
+            <a href="http://www.jrga.gov.cn/" target="_black">公安局</a>
+            <a href="http://www.1fangchan.com/shequ/2012/06/xf/" target="_black">消防大队</a>
+            <a href="http://www.jsjrfy.gov.cn/" target="_black">法院</a>
+            <a href="http://www.jrjcy.gov.cn/" target="_black">检察院</a>
+            <a href="http://www.jrmz.gov.cn/" target="_black">民政局</a>
+            <a href="http://www.jrcl.gov.cn/" target="_black">残联</a>
+        </li>
+    </ul>
+    <!-- 文卫系统 begin-->
+    <ul>
+        <li>
+            <a href="http://www.jrxf.gov.cn/sonweb/xcb/" target="_black">宣传部</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/xwzx/" target="_black">新闻中心</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/dx/" target="_black">市委党校（行政干校）</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/gdt/" target="_black">广播电视台</a>
+            <a href="http://www.jre.net.cn/allStation/jrjy/www_jre_net_cn/index.html?domainName=www.jre.net.cn/" target="_black">教育局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/hszh/" target="_black">红十字会</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/rkjsw/" target="_black">人口计生委</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/wgtyj/" target="_black">文广体育局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/wl/index.asp" target="_black">文联</a>
+            <a href="http://www.jsjrfda.gov.cn/" target="_black">食药监局</a>
+            <a href="http://www.jrhealth.gov.cn/" target="_black">卫生局</a>
+            <a href="http://www.jrcdc.com/" target="_black">疾控中心</a>
+            <a href="http://www.jryb.net/index.asp" target="_black">医保中心</a>
+            <a href="http://www.jrrmyy.cn/" target="_black">人民医院</a>
+            <a href="http://www.jrszyy.com/" target="_black">中医院</a>
+        </li>
+    </ul>
+    <!-- 财贸系统 begin-->
+    <ul>
+        <li>
+            <a href="http://www.jsjrcz.gov.cn/" target="_black">财政局</a>
+            <a href="http://www.jrnews.cn/" target="_black">福地公司</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/gsj/" target="_black">国税局</a>
+            <a href="http://www.jrnews.cn/jrds/" target="_black">地税局</a>
+            <a href="http://www.jrlsj.gov.cn/" target="_black">粮食储存中心</a>
+            <a href="http://www.jrcoop.com/" target="_black">供销社</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/swj/" target="_black">商务局（外贸公司、投促中心）</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/jrgsj/" target="_black">工商局</a>
+            <a href="http://wmdw.jswmw.com/home/?lid=7346" target="_black">烟草专卖局</a>
+            <a href="http://www.jrgzw.cn/" target="_black">国有资产经营总公司</a>
+        </li>
+    </ul>
+    <!-- 工交系统 begin-->
+    <ul>
+        <li>
+            <a href="http://www.jrfgw.gov.cn/" target="_black">发改经信委</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/wjj/" target="_black">物价局</a>
+            <a href="http://www.jrhb.gov.cn/" target="_black">环保局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/zjj/" target="_black">质监局</a>
+            <a href="http://www.jrsafety.gov.cn/" target="_black">安监局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/ywj/index.asp" target="_black">盐务局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/tjj/" target="_black">统计局</a>
+            <a href="http://www.jrstats.gov.cn/index1.asp" target="_black">句容调查队</a>
+            <a href="http://wmdw.jswmw.com/home/?lid=39" target="_black">公路管理处</a>
+            <a href="http://www.jrmh.cn/sonweb/jrhdc/" target="_black">航道处</a>
+            <a href="http://www.jrmh.cn/sonweb/jrygc/" target="_black">运管处</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/zjjdw/" target="_black">住建局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/fcyfwzx/" target="_black">房产业发展中心</a>
+            <a href="http://jrxzfw.gov.cn/jrxzfwweb/djzc/" target="_black">市政服务中心</a>
+            <a href="http://www.jrghj.gov.cn/" target="_black">规划局</a>
+            <a href="http://www.jrcg.cn/" target="_black">城管局</a>
+        </li>
+    </ul>
+    <!-- 农水系统 begin-->
+    <ul>
+        <li>
+            <a href="http://www.jsjrny.com/" target="_black">农委</a>
+            <a href="http://www.jrmlr.gov.cn/" target="_black">国土局</a>
+            <a href="http://www.jrxf.gov.cn/sonweb/qxj/" target="_black">气象局</a>
+        </li>
+    </ul>
+</div>
+</div>
+<div class="group-right rt">
+    <div id="datePicker"></div>
+</div>
+</div>
+<!-- 站群导航 end-->
+</div>
+</div>
 </div>
 <!-- 专题 begin-->
 <div id="sidetopic">
@@ -835,12 +1155,10 @@
             <div class="hot-news-title"><a href="javascript:void(0);">热点推荐</a></div>
             <div class="hot-news-list">
                 <ul>
-                    <li><i></i><em><a href="javascript:void(0);">[今日句容]</a></em><a href="javascript:void(0);">清明节前夕茅山新四军纪念馆迎来参观高峰</a><span>04-07</span></li>
-                    <li><i></i><em><a href="javascript:void(0);">[乡镇动态]</a></em><a href="javascript:void(0);">清明节前夕茅山新四军纪念馆迎来参观高峰</a><span>04-07</span></li>
-                    <li><i></i><em><a href="javascript:void(0);">[寄语市长]</a></em><a href="javascript:void(0);">清明节前夕茅山新四军纪念馆迎来参观高峰</a><span>04-07</span></li>
-                    <li><i></i><em><a href="javascript:void(0);">[今日句容]</a></em><a href="javascript:void(0);">清明节前夕茅山新四军纪念馆迎来参观高峰</a><span>04-07</span></li>
-                    <li><i></i><em><a href="javascript:void(0);">[今日句容]</a></em><a href="javascript:void(0);">清明节前夕茅山新四军纪念馆迎来参观高峰</a><span>04-07</span></li>
-                    <li><i></i><em><a href="javascript:void(0);">[今日句容]</a></em><a href="javascript:void(0);">清明节前夕茅山新四军纪念馆迎来参观高峰</a><span>04-07</span></li>
+                    <CMSPRO_DOCUMENTS DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="0" PAGESIZE="0" CHANNELCODE="rdtj">
+                    <li><i></i><em><a href="<CMSPRO_DOCUMENT FIELD='url' DOMAINMETADATANAME='热点推荐信息'>来源信息</CMSPRO_DOCUMENT>" target="_blank">[<CMSPRO_DOCUMENT FIELD="channel" DOMAINMETADATANAME="热点推荐信息">来源信息</CMSPRO_DOCUMENT>]</a></em><CMSPRO_DOCUMENT FIELD="title" AUTOLINK="true" LINKALT="true" LINKALTTEXT=" " NUM="20">标题</CMSPRO_DOCUMENT><span><CMSPRO_DOCUMENT FIELD=" publishedTime " DATEFORMAT="MM-dd">
+                        发布时间</CMSPRO_DOCUMENT></span></li>
+                    </CMSPRO_DOCUMENTS>
                 </ul>
             </div>
         </div>
